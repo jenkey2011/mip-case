@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zh-cn" mip>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <title>小说分类_小说网</title>
+    <link rel="stylesheet" href="https://c.mipcdn.com/static/v1/mip.css">
+    <link rel="stylesheet" href="https://c.mipcdn.com/static/mag-design/2.0.2/mag-design.min.css">
+    <link rel="canonical" href="https://www.mipengine.org/">
+    
+    
+        <style mip-custom>
+            @font-face {
+  font-family: "xiaoshuo";
+  src: url("./font/xiaoshuo.eot?t=1515560671046"); /* IE9*/
+  src: url("./font/xiaoshuo.eot?t=1515560671046#iefix") format('embedded-opentype'), url("./font/xiaoshuo.woff") format('woff'), url("./font/xiaoshuo.ttf?t=1515560671046") format('truetype'), url("./font/xiaoshuo.svg?t=1515560671046#xiaoshuo") format('svg'); /* iOS 4.1- */
+}
+.icon-xiaoshuo {
+  font-family: "xiaoshuo" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-paihangbang:before {
+  content: "\e663";
+}
+.icon-mianfei:before {
+  content: "\e665";
+}
+.icon-tuijian:before {
+  content: "\e668";
+}
+#header {
+  border-bottom: 1px solid #f1f1f1;
+  height: 44px;
+  line-height: 44px;
+  padding-left: 17px;
+  padding-right: 17px;
+}
+#header .left,
+#header .right {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+#header .left {
+  left: 17px;
+  text-align: left;
+}
+#header .right {
+  right: 17px;
+}
+#header a {
+  width: 22px;
+  height: 44px;
+  line-height: 44px;
+  color: #333;
+}
+#header h4 {
+  margin: 0;
+  padding: 0 50px;
+  text-align: center;
+}
+#footer {
+  color: #999;
+  font-size: 12px;
+  text-align: center;
+  line-height: 50px;
+}
+.text-box {
+  display: inline-block;
+  padding: 1px 2px;
+  margin-bottom: 2px;
+  text-decoration: none;
+  vertical-align: middle;
+  font-size: 10px;
+  line-height: 11px;
+  height: 10px;
+  font-style: normal;
+  font-weight: 400;
+  overflow: hidden;
+  box-sizing: content-box;
+  border-radius: 2px;
+}
+.text-box.text-box-gray {
+  color: #999;
+  border: 1px solid #e3e3e3;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+ul {
+  list-style: none;
+}
+.btn.btn-black,
+button.btn-black {
+  border-color: #707379;
+  color: #000;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+.color-gray {
+  color: #555;
+}
+.category {
+  border-bottom: 8px solid #f5f5f5;
+}
+.category:last-child {
+  border-bottom: none;
+}
+.category-item {
+  background-color: #f8f8f8;
+}
+.category-item a {
+  text-align: center;
+  padding: 10px 0;
+}
+.category-item .text {
+  color: #999;
+}
+
+        </style>
+    
+    
+    <noscript>
+        <style mip-officialrelease>
+            body {
+                -webkit-animation: none;
+                   -moz-animation: none;
+                    -ms-animation: none;
+                        animation: none;
+            }
+        </style>
+    </noscript>
+</head>
+
+
+<body>
+
+    <header id="header">
+    <div class="left">
+        
+            <a href="xiaoshuo.html"><i class="icon icon-left"></i></a>
+        
+    </div>
+    <h4 class="line-clamp1">小说分类</h4>
+    <div class="right text-right">
+        
+        
+        
+    </div>
+</header>
+
+    <div id="main">
+    <!-- 分类循环 -->
+    <div class="container category">
+        <!-- 分类标题 -->
+        <h4 class="line-clamp1">男生分类</h4>
+
+        <!-- 循环内容，一个 .category-item 为一个元素 -->
+        <div class="row gap-top">
+            <div class="span4">
+                <div class="category-item">
+                    <a href="list.html" class="block">
+                        <p class="line-clamp1">玄幻</p>
+                        <p class="line-clamp1 text gap-top-small">24413</p>
+                    </a>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="category-item">
+                    <a href="list.html" class="block">
+                        <p class="line-clamp1">都市</p>
+                        <p class="line-clamp1 text gap-top-small">14698</p>
+                    </a>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="category-item">
+                    <a href="list.html" class="block">
+                        <p class="line-clamp1">奇幻</p>
+                        <p class="line-clamp1 text gap-top-small">4517</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 循环内容，一个 .category-item 为一个元素 -->
+        <div class="row gap-top">
+            <div class="span4">
+                <div class="category-item">
+                    <a href="list.html" class="block">
+                        <p class="line-clamp1">仙侠</p>
+                        <p class="line-clamp1 text gap-top-small">7113</p>
+                    </a>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="category-item">
+                    <a href="list.html" class="block">
+                        <p class="line-clamp1">武侠</p>
+                        <p class="line-clamp1 text gap-top-small">1285</p>
+                    </a>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="category-item">
+                    <a href="list.html" class="block">
+                        <p class="line-clamp1">历史</p>
+                        <p class="line-clamp1 text gap-top-small">7031</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 循环内容，一个 .category-item 为一个元素 -->
+        <div class="row gap-top">
+            <div class="span4">
+                <div class="category-item">
+                    <a href="list.html" class="block">
+                        <p class="line-clamp1">军事</p>
+                        <p class="line-clamp1 text gap-top-small">1249</p>
+                    </a>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="category-item">
+                    <a href="list.html" class="block">
+                        <p class="line-clamp1">游戏</p>
+                        <p class="line-clamp1 text gap-top-small">1108</p>
+                    </a>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="category-item">
+                    <a href="list.html" class="block">
+                        <p class="line-clamp1">竞技</p>
+                        <p class="line-clamp1 text gap-top-small">403</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container category">
+        <!-- 分类标题 -->
+        <h4 class="line-clamp1">女生分类</h4>
+
+        <!-- 循环内容，一个 .category-item 为一个元素 -->
+        <div class="row gap-top">
+            <div class="span4">
+                <div class="category-item">
+                    <a href="list.html" class="block">
+                        <p class="line-clamp1">现代言情</p>
+                        <p class="line-clamp1 text gap-top-small">59239</p>
+                    </a>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="category-item">
+                    <a href="list.html" class="block">
+                        <p class="line-clamp1">古代言情</p>
+                        <p class="line-clamp1 text gap-top-small">38383</p>
+                    </a>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="category-item">
+                    <a href="list.html" class="block">
+                        <p class="line-clamp1">青春</p>
+                        <p class="line-clamp1 text gap-top-small">547</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 循环内容，一个 .category-item 为一个元素 -->
+        <div class="row gap-top">
+            <div class="span4">
+                <div class="category-item">
+                    <a href="list.html" class="block">
+                        <p class="line-clamp1">幻想言情</p>
+                        <p class="line-clamp1 text gap-top-small">478</p>
+                    </a>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="category-item">
+                    <a href="list.html" class="block">
+                        <p class="line-clamp1">灵异</p>
+                        <p class="line-clamp1 text gap-top-small">374</p>
+                    </a>
+                </div>
+            </div>
+            <div class="span4">
+                <!-- 空白元素 -->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container category">
+        <!-- 分类标题 -->
+        <h4 class="line-clamp1">出版分类</h4>
+
+        <!-- 循环内容，一个 .category-item 为一个元素 -->
+        <div class="row gap-top">
+            <div class="span4">
+                <div class="category-item">
+                    <a href="list.html" class="block">
+                        <p class="line-clamp1">成功励志</p>
+                        <p class="line-clamp1 text gap-top-small">4519</p>
+                    </a>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="category-item">
+                    <a href="list.html" class="block">
+                        <p class="line-clamp1">计算机</p>
+                        <p class="line-clamp1 text gap-top-small">3429</p>
+                    </a>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="category-item">
+                    <a href="list.html" class="block">
+                        <p class="line-clamp1">经济管理</p>
+                        <p class="line-clamp1 text gap-top-small">3128</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 循环内容，一个 .category-item 为一个元素 -->
+        <div class="row gap-top">
+            <div class="span4">
+                <div class="category-item">
+                    <a href="list.html" class="block">
+                        <p class="line-clamp1">科技</p>
+                        <p class="line-clamp1 text gap-top-small">1883</p>
+                    </a>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="category-item">
+                    <a href="list.html" class="block">
+                        <p class="line-clamp1">历史传记</p>
+                        <p class="line-clamp1 text gap-top-small">1643</p>
+                    </a>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="category-item">
+                    <a href="list.html" class="block">
+                        <p class="line-clamp1">两性情感</p>
+                        <p class="line-clamp1 text gap-top-small">1382</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 循环内容，一个 .category-item 为一个元素 -->
+        <div class="row gap-top">
+            <div class="span4">
+                <div class="category-item">
+                    <a href="list.html" class="block">
+                        <p class="line-clamp1">亲子少儿</p>
+                        <p class="line-clamp1 text gap-top-small">1033</p>
+                    </a>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="category-item">
+                    <a href="list.html" class="block">
+                        <p class="line-clamp1">社会科学</p>
+                        <p class="line-clamp1 text gap-top-small">831</p>
+                    </a>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="category-item">
+                    <a href="list.html" class="block">
+                        <p class="line-clamp1">生活</p>
+                        <p class="line-clamp1 text gap-top-small">671</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer id="footer">
+    小说网 &copy; 2018 - 冀ICP备xxxx号
+</footer>
+
+    <script src="https://c.mipcdn.com/static/v1/mip.js"></script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="75px" height="75px" viewBox="0 0 75 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Bitmap</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="37.5" cy="37.5" r="37.5"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MIP小故事官网01-Copy" transform="translate(-299.000000, -2073.000000)">
+            <g id="Group-2" transform="translate(164.000000, 2028.000000)">
+                <g id="使用指南">
+                    <g id="Bitmap" transform="translate(135.000000, 45.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#333333" xlink:href="#path-1"></use>
+                        <g id="灯泡" mask="url(#mask-2)">
+                            <g transform="translate(24.000000, 17.000000)">
+                                <path d="M8,39.9999723 C8,41.099982 8.97501049,42 10.1666767,42 L18.8333233,42 C20.0249895,42 21,41.099982 21,39.9999723 L21,38 L8,38 L8,39.9999723 Z" id="Shape" stroke="none" fill="#FFFFFF" fill-rule="nonzero"></path>
+                                <path d="M14.5,2 C7.59655257,2 2,7.57242401 2,14.4374857 C2,18.5485831 4.02264913,22.3144894 7.35667881,24.634635 L8.21427753,25.2314366 L8.21427753,30.9374857 C8.21427753,30.9653543 8.2490732,31 8.28572249,31 L20.7142775,31 C20.7509268,31 20.7857225,30.9653543 20.7857225,30.9374857 L20.7857225,25.2314144 L21.6433498,24.6346151 C24.977377,22.3145573 27,18.548675 27,14.4374858 C27,7.57242397 21.4034474,2 14.5,2 Z" id="Path" stroke="#FFFFFF" stroke-width="4" fill="none"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="zh-cn" mip>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <title>小故事 - mipx</title>
+    <link rel="stylesheet" href="https://c.mipcdn.com/static/v1/mip.css">
+    <link rel="stylesheet" href="https://c.mipcdn.com/static/mag-design/2.0.2/mag-design.min.css">
+    <link rel="canonical" href="https://x.mipengine.org/story.html">
+    
+    
+        <style mip-custom>
+            .header {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.header .logo {
+  margin: 0;
+  padding: 0;
+}
+.header .logo a {
+  background: url("./img/logo.png") no-repeat left center;
+  font-size: 0;
+  height: 40px;
+  margin-top: 10px;
+  background-size: contain;
+  width: 100px;
+  display: block;
+}
+.header .nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .nav a {
+  color: rgba(0,0,0,0.54);
+  height: 60px;
+  line-height: 60px;
+  padding: 0 30px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.header .nav a:hover {
+  background-color: rgba(0,0,0,0.02) !important;
+}
+.header .nav a:active {
+  background-color: rgba(0,0,0,0.04) !important;
+}
+.header .nav a:hover {
+  color: rgba(0,0,0,0.88);
+}
+.header .nav a.current {
+  color: rgba(0,0,0,0.88);
+}
+.header .nav a.current span {
+  height: 100%;
+  display: block;
+  border-bottom: 3px solid #000;
+  font-weight: 700;
+}
+.header .dir {
+  line-height: 40px;
+  padding: 0 10px;
+  display: none;
+  margin-right: -10px;
+}
+.header .dir .icon {
+  font-size: 20px;
+}
+.header-fixed {
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.04);
+}
+@media screen and (max-width: 767px) {
+  .header {
+    width: 100%;
+    padding: 2px 16px;
+  }
+  .header .logo a {
+    margin-top: 5px;
+    height: 30px;
+    width: 70px;
+  }
+  .header .nav {
+    display: none;
+  }
+  .header .dir {
+    display: block;
+  }
+}
+.footer {
+  position: relative;
+  z-index: 20;
+  background-color: #1e1e1e;
+  color: #999;
+  font-size: 14px;
+}
+.footer a {
+  color: #999;
+}
+.footer a:hover {
+  color: #38f;
+}
+.footer .inner {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+.footer .menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer .menu dt {
+  font-size: 18px;
+  line-height: 18px;
+  padding-bottom: 20px;
+  color: #fff;
+}
+.footer .menu dd {
+  line-height: 30px;
+}
+.footer .wise {
+  display: none;
+  line-height: 28px;
+}
+.footer .wise a {
+  display: inline-block;
+  border-radius: 3px;
+  background-color: rgba(255,255,255,0.02);
+  padding: 0 8px;
+  margin-right: 16px;
+}
+.footer .copyright {
+  text-align: center;
+  padding-top: 90px;
+  color: rgba(153,153,153,0.54);
+}
+@media screen and (max-width: 767px) {
+  .footer .inner {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .footer .pc {
+    display: none;
+  }
+  .footer .wise {
+    display: block;
+  }
+  .footer .copyright {
+    padding-top: 16px;
+    text-align: left;
+  }
+}
+body {
+  min-width: 320px;
+}
+.main-fixed {
+  margin-top: 60px;
+}
+#sidebar {
+  z-index: 19999 !important;
+}
+#sidebar > ul {
+  padding-top: 50px;
+}
+.MIP-SIDEBAR-MASK {
+  z-index: 19998 !important;
+}
+@media screen and (max-width: 767px) {
+  .main-fixed {
+    margin-top: 44px;
+  }
+}
+body {
+  overflow-x: hidden;
+}
+.inner {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.inner h3 {
+  padding-top: 100px;
+  font-size: 30px;
+  color: #000;
+}
+.inner ul {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.inner li {
+  list-style: none;
+  width: 270px;
+  height: 360px;
+  border: 1px solid #f1f1f1;
+  border-radius: 6px;
+  text-align: center;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  margin: 0 0.5%;
+}
+.inner li:hover {
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+}
+.inner li:nth-child(1) .intro-icon {
+  background-image: url("./img/story/intro1x2.png");
+}
+.inner li:nth-child(2) .intro-icon {
+  background-image: url("./img/story/intro2x2.png");
+}
+.inner li:nth-child(3) .intro-icon {
+  background-image: url("./img/story/intro3x2.png");
+}
+.inner li:nth-child(4) .intro-icon {
+  background-image: url("./img/story/intro4x2.png");
+}
+.inner li .intro-icon {
+  height: 180px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 80px;
+}
+.inner li .intro-title {
+  font-size: 24px;
+  color: #000;
+  line-height: 37px;
+  margin-bottom: 10px;
+}
+.inner li .intro-content {
+  width: 200px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 22px;
+  color: #666;
+}
+.banner {
+  box-sizing: content-box;
+  position: relative;
+  height: 490px;
+  overflow: visible;
+  color: #fff;
+  background: url("./img/story/bj.png") center bottom no-repeat;
+}
+.banner .inner {
+  padding-left: 65px;
+  position: relative;
+  z-index: 10;
+  top: 44%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.banner .group {
+  display: none;
+}
+.banner h2 {
+  font-family: DINAlternate;
+  font-size: 60px;
+  letter-spacing: 3px;
+}
+.banner .brief-title,
+.banner .brief-content {
+  width: 416px;
+  opacity: 0.8;
+  font-family: PingFangSC;
+  font-size: 16px;
+}
+.banner .brief-title {
+  margin: 20px 0px 10px 0px;
+  font-size: 32px;
+}
+.banner .start {
+  padding-top: 30px;
+}
+.banner .start a {
+  display: inline-block;
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-image: -webkit-linear-gradient(right, #ecf6ff 0%, #fff 100%);
+  background-image: linear-gradient(270deg, #ecf6ff 0%, #fff 100%);
+  border-radius: 3px;
+  color: #4d5abc;
+}
+.banner .start a i {
+  display: inline-block;
+  width: 18px;
+  height: 14px;
+  background: url("./img/story/start.png") 0 0 no-repeat;
+  background-size: cover;
+}
+.banner .show {
+  position: absolute;
+  left: 50%;
+  top: 60px;
+  margin-left: 200px;
+  width: 235px;
+  height: 450px;
+  background: url("./img/story/show.png") center center no-repeat;
+  background-size: cover;
+}
+.case mip-wqz-slide {
+  text-align: center;
+}
+.case mip-wqz-slide .slide-button {
+  margin-top: -100px;
+}
+.case h3 {
+  margin-bottom: 40px;
+}
+.case mip-img {
+  cursor: pointer;
+}
+.case h4 {
+  font-weight: normal;
+  font-size: 20px;
+  margin: 26px 0 10px 0;
+}
+.case p {
+  font-size: 18px;
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  opacity: 0.6;
+  margin: 0 auto;
+}
+.case a {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9;
+}
+.guide li {
+  width: 32%;
+  height: 250px;
+}
+.guide li:nth-child(1) .intro-icon {
+  background-image: url("./img/story/guide1.png");
+}
+.guide li:nth-child(2) .intro-icon {
+  background-image: url("./img/story/guide2.png");
+}
+.guide li:nth-child(3) .intro-icon {
+  background-image: url("./img/story/guide3.png");
+}
+.guide li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.guide li .intro-icon {
+  height: 140px;
+  background-size: auto 75px;
+}
+.guide li .intro-title {
+  font-size: 20px;
+}
+.guide li .intro-content {
+  font-size: 16px;
+  width: 230px;
+}
+.partner {
+  margin-bottom: 80px;
+}
+.partner ul {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.partner li {
+  width: 31%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.partner li a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.partner li a mip-img {
+  width: 44%;
+}
+@media screen and (max-width: 600px) {
+  .inner {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+    padding: 0 27px;
+  }
+  .inner h3 {
+    padding-top: 30px;
+    font-size: 32px;
+    text-align: center;
+  }
+  .inner ul {
+    margin-top: 10px;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .inner li {
+    width: 47%;
+    margin-bottom: 3%;
+    height: 230px;
+  }
+  .inner li .intro-icon {
+    height: 100px;
+    background-size: auto 50px;
+  }
+  .inner li .intro-title {
+    font-size: 15px;
+    line-height: 31px;
+    margin-bottom: 0;
+  }
+  .inner li .intro-content {
+    width: 140px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .banner {
+    height: 560px;
+    background: url("./img/story/bgm.png") center bottom no-repeat;
+    background-size: 100% 100%;
+  }
+  .banner .inner {
+    padding-left: 0;
+    padding-right: 0;
+    top: 290px;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .banner .group {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -146px;
+    top: -244px;
+    width: 293px;
+    height: 234px;
+    background: url("./img/story/Group.png") 0 0 no-repeat;
+    background-size: cover;
+  }
+  .banner h2,
+  .banner p,
+  .banner div {
+    width: 250px;
+  }
+  .banner h2 {
+    font-size: 34px;
+    letter-spacing: 2px;
+  }
+  .banner .brief-title,
+  .banner .brief-content {
+    font-size: 12px;
+    width: 250px;
+  }
+  .banner .brief-title {
+    font-size: 19px;
+    margin: 10px 0;
+  }
+  .banner .show {
+    display: none;
+  }
+  .banner .start {
+    padding-top: 20px;
+  }
+  .banner .start a {
+    font-size: 14px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .banner .start .icon {
+    font-size: 10px;
+  }
+  .guide li {
+    width: 100%;
+    height: 80px;
+  }
+  .guide li .intro-icon {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-size: auto 40px;
+  }
+  .guide li .intro-title {
+    text-align: left;
+    font-size: 16px;
+    padding-top: 20px;
+    line-height: 1.5;
+  }
+  .guide li .intro-content {
+    text-align: left;
+    width: 100%;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .case a {
+    display: block;
+  }
+  .case mip-wqz-slide .slide-container {
+    overflow: auto !important;
+  }
+  .case mip-wqz-slide .slide-container::-webkit-scrollbar {
+    display: none;
+  }
+  .case mip-wqz-slide .slide-button {
+    display: none;
+  }
+  .case .slide-item {
+    width: 120px !important;
+  }
+  .case .slide-item h4 {
+    font-size: 13px;
+    margin: 14px 0 4px 0;
+  }
+  .case .slide-item p {
+    font-size: 12px;
+    max-width: 108px;
+    padding-bottom: 10px;
+  }
+  .partner {
+    margin-bottom: 30px;
+  }
+  .partner li {
+    width: 30%;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  #preview-wrap {
+    display: none !important;
+  }
+  mip-wqz-slide .slide-item {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .intro .inner ul {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .intro .inner ul li {
+    width: 80%;
+  }
+  .partner .inner ul {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+  .partner .inner ul li {
+    width: 40%;
+  }
+}
+.place-holder {
+  height: 600px;
+}
+
+        </style>
+    
+    
+    <noscript>
+        <style mip-officialrelease>
+            body {
+                -webkit-animation: none;
+                   -moz-animation: none;
+                    -ms-animation: none;
+                        animation: none;
+            }
+        </style>
+    </noscript>
+</head>
+
+<body>
+    
+    
+        <mip-fixed type="top" class="header-fixed">
+    <header class="header">
+    <h1 class="logo">
+        <a href="/" data-type="mip">mipx 官网</a>
+    </h1>
+    <nav class="nav">
+        
+            <a href="/">
+                <span>主页</span>
+            </a>
+        
+            <a href="/templates.html#top">
+                <span>模板</span>
+            </a>
+        
+            <a href="/story.html" class="current">
+                <span>小故事</span>
+            </a>
+        
+            <a href="/started.html">
+                <span>指南</span>
+            </a>
+        
+            <a href="/about.html">
+                <span>关于</span>
+            </a>
+        
+            <a href="https://github.com/mipengine">
+                <span>GitHub</span>
+            </a>
+        
+    </nav>
+    <div class="dir" on="tap:sidebar.open">
+        <i class="icon icon-menulist"></i>
+    </div>
+</header>
+
+</mip-fixed>
+
+    
+
+    
+    <div class="main main-fixed">
+        
+    <div class="banner">
+        <div class="inner">
+            <div class="group"></div>
+            <h2>MIP STORIES</h2>
+            <p class="brief-title">一种开放式的富媒体内容格式</p>
+            <p class="brief-content">基于MIP框架的可能性，开发者可快速创建多元化的故事内容，给用户带来全屏沉浸式的新浏览体验。</p>
+            <div class="start">
+                <a href="/started.html">制作一个小故事
+                    <i class="icon go"></i>
+                </a>
+            </div>
+        </div>
+        <div class="show"></div>
+    </div>
+    <div class="intro">
+        <div class="inner">
+            <h3>小故事的优势</h3>
+            <ul>
+                
+                    <li>
+                        <div class="intro-icon"></div>
+                        <div class="intro-detail">
+                            <div class="intro-title">身临其境</div>
+                            <div class="intro-content">为开发者提供更多创造性的机会，设计灵活，交互新颖；有趣的故事内容＋全屏填充式沉浸浏览更加引人入胜</div>
+                        </div>
+                    </li>
+                
+                    <li>
+                        <div class="intro-icon"></div>
+                        <div class="intro-detail">
+                            <div class="intro-title">快速便捷</div>
+                            <div class="intro-content">是基于mip框架开发构建的，页面加载速度更快，为用户提供流畅的阅读体验</div>
+                        </div>
+                    </li>
+                
+                    <li>
+                        <div class="intro-icon"></div>
+                        <div class="intro-detail">
+                            <div class="intro-title">开放共享</div>
+                            <div class="intro-content">为开发者提供更多创造性的机会，设计灵活，交互新颖；有趣的故事内容＋全屏填充式沉浸浏览更加引人入胜</div>
+                        </div>
+                    </li>
+                
+                    <li>
+                        <div class="intro-icon"></div>
+                        <div class="intro-detail">
+                            <div class="intro-title">强势曝光</div>
+                            <div class="intro-content">关联故事主题 query，在移动端百度搜索结果中持续特型展示，为开发者建设品牌形象提升品牌曝光</div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="case">
+        <div class="inner">
+            <h3>优秀小故事展示</h3>
+            <mip-wqz-preview>
+                <mip-wqz-slide id="el" data-slide-preview="4" data-slide-phone-preview="3" data-slide-space="10" >
+                    
+                        <div class="slide-item" data-item preview data-preview-link="https://m.baidu.com/mip/c/s/mipstatic.baidu.com/static/mip-static/mip-story/story-cherry/cherry.html?story=1&#38;word=%E6%A8%B1%E8%8A%B1&#38;title=%E6%A8%B1%E8%8A%B1&#38;lid=6236951910748148648&#38;referlid=6236951910748148648&#38;ms=1&#38;frsrcid=37243&#38;frorder=2">
+                            <a href="https://m.baidu.com/mip/c/s/mipstatic.baidu.com/static/mip-static/mip-story/story-cherry/cherry.html?story=1&#38;word=%E6%A8%B1%E8%8A%B1&#38;title=%E6%A8%B1%E8%8A%B1&#38;lid=6236951910748148648&#38;referlid=6236951910748148648&#38;ms=1&#38;frsrcid=37243&#38;frorder=2"></a>
+                            <mip-img src="./img/story/case1.jpg" width="560" height="960" layout="responsive">
+                            </mip-img>
+                            <h4>《邂逅樱花》</h4>
+                            <p>相约淋一场樱花雨</p>
+                        </div>
+                    
+                        <div class="slide-item" data-item preview data-preview-link="https://m.baidu.com/mip/c/s/mipstatic.baidu.com/static/mip-static/mip-story/story-cherry/cherry.html?story=1&#38;word=%E6%A8%B1%E8%8A%B1&#38;title=%E6%A8%B1%E8%8A%B1&#38;lid=6236951910748148648&#38;referlid=6236951910748148648&#38;ms=1&#38;frsrcid=37243&#38;frorder=2">
+                            <a href="https://m.baidu.com/mip/c/s/mipstatic.baidu.com/static/mip-static/mip-story/story-cherry/cherry.html?story=1&#38;word=%E6%A8%B1%E8%8A%B1&#38;title=%E6%A8%B1%E8%8A%B1&#38;lid=6236951910748148648&#38;referlid=6236951910748148648&#38;ms=1&#38;frsrcid=37243&#38;frorder=2"></a>
+                            <mip-img src="./img/story/case1.jpg" width="560" height="960" layout="responsive">
+                            </mip-img>
+                            <h4>《第九十届奥斯卡》</h4>
+                            <p>不看发布会也能全知晓</p>
+                        </div>
+                    
+                        <div class="slide-item" data-item preview data-preview-link="https://m.baidu.com/mip/c/s/mipstatic.baidu.com/static/mip-static/mip-story/story-cherry/cherry.html?story=1&#38;word=%E6%A8%B1%E8%8A%B1&#38;title=%E6%A8%B1%E8%8A%B1&#38;lid=6236951910748148648&#38;referlid=6236951910748148648&#38;ms=1&#38;frsrcid=37243&#38;frorder=2">
+                            <a href="https://m.baidu.com/mip/c/s/mipstatic.baidu.com/static/mip-static/mip-story/story-cherry/cherry.html?story=1&#38;word=%E6%A8%B1%E8%8A%B1&#38;title=%E6%A8%B1%E8%8A%B1&#38;lid=6236951910748148648&#38;referlid=6236951910748148648&#38;ms=1&#38;frsrcid=37243&#38;frorder=2"></a>
+                            <mip-img src="./img/story/case1.jpg" width="560" height="960" layout="responsive">
+                            </mip-img>
+                            <h4>《我花样女王》</h4>
+                            <p>运动员的异样职业</p>
+                        </div>
+                    
+                        <div class="slide-item" data-item preview data-preview-link="https://m.baidu.com/mip/c/s/mipstatic.baidu.com/static/mip-static/mip-story/story-cherry/cherry.html?story=1&#38;word=%E6%A8%B1%E8%8A%B1&#38;title=%E6%A8%B1%E8%8A%B1&#38;lid=6236951910748148648&#38;referlid=6236951910748148648&#38;ms=1&#38;frsrcid=37243&#38;frorder=2">
+                            <a href="https://m.baidu.com/mip/c/s/mipstatic.baidu.com/static/mip-static/mip-story/story-cherry/cherry.html?story=1&#38;word=%E6%A8%B1%E8%8A%B1&#38;title=%E6%A8%B1%E8%8A%B1&#38;lid=6236951910748148648&#38;referlid=6236951910748148648&#38;ms=1&#38;frsrcid=37243&#38;frorder=2"></a>
+                            <mip-img src="./img/story/case1.jpg" width="560" height="960" layout="responsive">
+                            </mip-img>
+                            <h4>《邂逅樱花》</h4>
+                            <p>相约淋一场樱花雨</p>
+                        </div>
+                    
+                        <div class="slide-item" data-item preview data-preview-link="https://m.baidu.com/mip/c/s/mipstatic.baidu.com/static/mip-static/mip-story/story-cherry/cherry.html?story=1&#38;word=%E6%A8%B1%E8%8A%B1&#38;title=%E6%A8%B1%E8%8A%B1&#38;lid=6236951910748148648&#38;referlid=6236951910748148648&#38;ms=1&#38;frsrcid=37243&#38;frorder=2">
+                            <a href="https://m.baidu.com/mip/c/s/mipstatic.baidu.com/static/mip-static/mip-story/story-cherry/cherry.html?story=1&#38;word=%E6%A8%B1%E8%8A%B1&#38;title=%E6%A8%B1%E8%8A%B1&#38;lid=6236951910748148648&#38;referlid=6236951910748148648&#38;ms=1&#38;frsrcid=37243&#38;frorder=2"></a>
+                            <mip-img src="./img/story/case1.jpg" width="560" height="960" layout="responsive">
+                            </mip-img>
+                            <h4>标题标题</h4>
+                            <p>简述简述简述简述</p>
+                        </div>
+                    
+                        <div class="slide-item" data-item preview data-preview-link="https://m.baidu.com/mip/c/s/mipstatic.baidu.com/static/mip-static/mip-story/story-cherry/cherry.html?story=1&#38;word=%E6%A8%B1%E8%8A%B1&#38;title=%E6%A8%B1%E8%8A%B1&#38;lid=6236951910748148648&#38;referlid=6236951910748148648&#38;ms=1&#38;frsrcid=37243&#38;frorder=2">
+                            <a href="https://m.baidu.com/mip/c/s/mipstatic.baidu.com/static/mip-static/mip-story/story-cherry/cherry.html?story=1&#38;word=%E6%A8%B1%E8%8A%B1&#38;title=%E6%A8%B1%E8%8A%B1&#38;lid=6236951910748148648&#38;referlid=6236951910748148648&#38;ms=1&#38;frsrcid=37243&#38;frorder=2"></a>
+                            <mip-img src="./img/story/case1.jpg" width="560" height="960" layout="responsive">
+                            </mip-img>
+                            <h4>标题标题</h4>
+                            <p>简述简述简述简述</p>
+                        </div>
+                    
+                </mip-wqz-slide>
+            </mip-wqz-preview>
+            <!-- <mip-scrollbox data-type="row">
+                <div data-wrapper>
+                    <div data-inner>
+                        <div data-scroller>
+                            
+                                <div data-item data-col="3" data-target="https://m.baidu.com/mip/c/s/mipstatic.baidu.com/static/mip-static/mip-story/story-cherry/cherry.html?story=1&#38;word=%E6%A8%B1%E8%8A%B1&#38;title=%E6%A8%B1%E8%8A%B1&#38;lid=6236951910748148648&#38;referlid=6236951910748148648&#38;ms=1&#38;frsrcid=37243&#38;frorder=2">
+                                    <mip-img src="./img/story/case1.jpg" width="560" height="960" layout="responsive">
+                                    </mip-img>
+                                    <h4>《邂逅樱花》</h4>
+                                    <p>相约淋一场樱花雨</p> 
+                                </div>
+                            
+                                <div data-item data-col="3" data-target="https://m.baidu.com/mip/c/s/mipstatic.baidu.com/static/mip-static/mip-story/story-cherry/cherry.html?story=1&#38;word=%E6%A8%B1%E8%8A%B1&#38;title=%E6%A8%B1%E8%8A%B1&#38;lid=6236951910748148648&#38;referlid=6236951910748148648&#38;ms=1&#38;frsrcid=37243&#38;frorder=2">
+                                    <mip-img src="./img/story/case1.jpg" width="560" height="960" layout="responsive">
+                                    </mip-img>
+                                    <h4>《第九十届奥斯卡》</h4>
+                                    <p>不看发布会也能全知晓</p> 
+                                </div>
+                            
+                                <div data-item data-col="3" data-target="https://m.baidu.com/mip/c/s/mipstatic.baidu.com/static/mip-static/mip-story/story-cherry/cherry.html?story=1&#38;word=%E6%A8%B1%E8%8A%B1&#38;title=%E6%A8%B1%E8%8A%B1&#38;lid=6236951910748148648&#38;referlid=6236951910748148648&#38;ms=1&#38;frsrcid=37243&#38;frorder=2">
+                                    <mip-img src="./img/story/case1.jpg" width="560" height="960" layout="responsive">
+                                    </mip-img>
+                                    <h4>《我花样女王》</h4>
+                                    <p>运动员的异样职业</p> 
+                                </div>
+                            
+                                <div data-item data-col="3" data-target="https://m.baidu.com/mip/c/s/mipstatic.baidu.com/static/mip-static/mip-story/story-cherry/cherry.html?story=1&#38;word=%E6%A8%B1%E8%8A%B1&#38;title=%E6%A8%B1%E8%8A%B1&#38;lid=6236951910748148648&#38;referlid=6236951910748148648&#38;ms=1&#38;frsrcid=37243&#38;frorder=2">
+                                    <mip-img src="./img/story/case1.jpg" width="560" height="960" layout="responsive">
+                                    </mip-img>
+                                    <h4>《邂逅樱花》</h4>
+                                    <p>相约淋一场樱花雨</p> 
+                                </div>
+                            
+                                <div data-item data-col="3" data-target="https://m.baidu.com/mip/c/s/mipstatic.baidu.com/static/mip-static/mip-story/story-cherry/cherry.html?story=1&#38;word=%E6%A8%B1%E8%8A%B1&#38;title=%E6%A8%B1%E8%8A%B1&#38;lid=6236951910748148648&#38;referlid=6236951910748148648&#38;ms=1&#38;frsrcid=37243&#38;frorder=2">
+                                    <mip-img src="./img/story/case1.jpg" width="560" height="960" layout="responsive">
+                                    </mip-img>
+                                    <h4>标题标题</h4>
+                                    <p>简述简述简述简述</p> 
+                                </div>
+                            
+                                <div data-item data-col="3" data-target="https://m.baidu.com/mip/c/s/mipstatic.baidu.com/static/mip-static/mip-story/story-cherry/cherry.html?story=1&#38;word=%E6%A8%B1%E8%8A%B1&#38;title=%E6%A8%B1%E8%8A%B1&#38;lid=6236951910748148648&#38;referlid=6236951910748148648&#38;ms=1&#38;frsrcid=37243&#38;frorder=2">
+                                    <mip-img src="./img/story/case1.jpg" width="560" height="960" layout="responsive">
+                                    </mip-img>
+                                    <h4>标题标题</h4>
+                                    <p>简述简述简述简述</p> 
+                                </div>
+                            
+                            <div data-item data-col="4">
+                                <mip-img src="https://dummyimage.com/300x400?a" width="300" height="400" layout="responsive">
+                                </mip-img>
+                                <p>这是 col4 的容器</p>
+                            </div>
+                            <div data-item data-col="4">
+                                <mip-img src="https://dummyimage.com/300x400?b" width="300" height="400" layout="responsive">
+                                </mip-img>
+                                <p>这是 col4 的容器</p>
+                            </div>
+                            <div data-item data-col="4">
+                                <mip-img src="https://dummyimage.com/300x400?c" width="300" height="400" layout="responsive">
+                                </mip-img>
+                                <p>这是 col4 的容器</p>
+                            </div>
+                            <div data-item data-col="4">
+                                <mip-img src="https://dummyimage.com/300x400?d" width="300" height="400" layout="responsive">
+                                </mip-img>
+                                <p>这是 col4 的容器</p>
+                            </div>
+                            <div data-item data-col="4">
+                                <mip-img src="https://dummyimage.com/300x400?e" width="300" height="400" layout="responsive">
+                                </mip-img>
+                                <p>这是 col4 的容器</p>
+                            </div>
+                            <div data-item data-col="4">
+                                <mip-img src="https://dummyimage.com/300x400?f" width="300" height="400" layout="responsive">
+                                </mip-img>
+                                <p>这是 col4 的容器</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </mip-scrollbox> -->
+        </div>
+    </div>
+    <div class="guide">
+        <div class="inner">
+            <h3>小故事指导支持</h3>
+            <ul>
+                
+                    <li>
+                        <a href="https://www.mipengine.org/examples/mip-extensions/mip-story.html" target="_blank">
+                            <div class="intro-icon"></div>
+                            <div class="intro-detail">
+                                <div class="intro-title">创意指导</div>
+                                <div class="intro-content">如何构思一个引人入胜的小故事</div>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://www.mipengine.org/examples/mip-extensions/mip-story.html" target="_blank">
+                            <div class="intro-icon"></div>
+                            <div class="intro-detail">
+                                <div class="intro-title">开发指导</div>
+                                <div class="intro-content">如何创建开发一个小故事</div>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://www.mipengine.org/examples/mip-extensions/mip-story.html" target="_blank">
+                            <div class="intro-icon"></div>
+                            <div class="intro-detail">
+                                <div class="intro-title">工具指导</div>
+                                <div class="intro-content">小故事开发工具详细了解</div>
+                            </div>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="partner">
+        <div class="inner">
+            <h3>合作伙伴</h3>
+            <ul>
+                
+                    <li>
+                        <a href="javascript:;" target="_blank">
+                            <mip-img width="164" height="26" layout="responsive" src="./img/story/partner.png" alt="公司"></mip-img>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="javascript:;" target="_blank">
+                            <mip-img width="164" height="26" layout="responsive" src="./img/story/partner.png" alt="公司"></mip-img>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="javascript:;" target="_blank">
+                            <mip-img width="164" height="26" layout="responsive" src="./img/story/partner.png" alt="公司"></mip-img>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="javascript:;" target="_blank">
+                            <mip-img width="164" height="26" layout="responsive" src="./img/story/partner.png" alt="公司"></mip-img>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="javascript:;" target="_blank">
+                            <mip-img width="164" height="26" layout="responsive" src="./img/story/partner.png" alt="公司"></mip-img>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="javascript:;" target="_blank">
+                            <mip-img width="164" height="26" layout="responsive" src="./img/story/partner.png" alt="公司"></mip-img>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+    </div>
+
+    
+    <footer class="footer">
+    <div class="inner">
+        <div class="menu pc">
+            <dl>
+                <dt>模板</dt>
+                <dd><a href="/templates.html#小说">小说</a></dd>
+            </dl>
+            <dl>
+                <dt>技术支持</dt>
+                <dd><a href="/about.html">关于 mipx</a></dd>
+                <dd><a href="https://github.com/mipengine/page-design/issues/new?title=%E5%8F%8D%E9%A6%88%E9%97%AE%E9%A2%98">反馈问题</a></dd>
+                <dd><a href="https://github.com/mipengine/page-design/blob/master/CONTRIBUTING.md">贡献指南</a></dd>
+            </dl>
+            <dl>
+                <dt>联系我们</dt>
+                <dd><a href="http://www.cnblogs.com/mipengine">MIP官方博客</a></dd>
+                <dd><a href="//shang.qq.com/wpa/qunwpa?idkey=5c6f03c0bbe2958e5a808e0ed1680d91c016a29d1dba67bed5fa6877ca4cf2e9" target="_blank">QQ群：580967494</a></dd>
+            </dl>
+        </div>
+        <div class="wise">
+            <span>联系我们：</span>
+            <a href="http://www.cnblogs.com/mipengine">MIP 官方博客</a>
+            <span>QQ群 580967494</span>
+        </div>
+        <div class="copyright">
+            &copy; 2018 MIP - 京ICP证030173号
+        </div>
+    </div>
+</footer>
+
+    <mip-stats-baidu token="ba1a1101ebb8f48de2cd80f3d9b19338"></mip-stats-baidu>
+
+    <mip-sidebar
+    id="sidebar"
+    side="right"
+    layout="nodisplay"
+    class="mip-hidden">
+    <ul>
+        
+            <li>
+                <a href="/">
+                    主页
+                </a>
+
+                
+            </li>
+        
+            <li>
+                <a href="/templates.html#top">
+                    模板
+                </a>
+
+                
+            </li>
+        
+            <li>
+                <a href="/story.html" class="active">
+                    小故事
+                </a>
+
+                
+            </li>
+        
+            <li>
+                <a href="/started.html">
+                    指南
+                </a>
+
+                
+            </li>
+        
+            <li>
+                <a href="/about.html">
+                    关于
+                </a>
+
+                
+            </li>
+        
+            <li>
+                <a href="https://github.com/mipengine">
+                    GitHub
+                </a>
+
+                
+            </li>
+        
+  </ul>
+</mip-sidebar>
+
+
+    
+    <script src="https://c.mipcdn.com/static/v1/mip.js"></script>
+
+
+    
+        <script src="https://c.mipcdn.com/static/v1/mip-sidebar/mip-sidebar.js"></script>
+    
+        <script src="https://c.mipcdn.com/static/v1/mip-fixed/mip-fixed.js"></script>
+    
+        <script src="https://c.mipcdn.com/static/v1/mip-stats-baidu/mip-stats-baidu.js"></script>
+    
+        <script src="https://c.mipcdn.com/static/v1/mip-scrollbox/mip-scrollbox.js"></script>
+    
+        <script src="https://c.mipcdn.com/static/v1/mip-wqz-slide/mip-wqz-slide.js"></script>
+    
+        <script src="https://c.mipcdn.com/static/v1/mip-wqz-preview/mip-wqz-preview.js"></script>
+    
+
+
+
+</body>
+</html>

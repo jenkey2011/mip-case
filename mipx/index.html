@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="zh-cn" mip>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <title>主页 - mipx</title>
+    <link rel="stylesheet" href="https://c.mipcdn.com/static/v1/mip.css">
+    <link rel="stylesheet" href="https://c.mipcdn.com/static/mag-design/2.0.2/mag-design.min.css">
+    <link rel="canonical" href="https://x.mipengine.org">
+    
+    
+        <style mip-custom>
+            .header {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.header .logo {
+  margin: 0;
+  padding: 0;
+}
+.header .logo a {
+  background: url("./img/logo.png") no-repeat left center;
+  font-size: 0;
+  height: 40px;
+  margin-top: 10px;
+  background-size: contain;
+  width: 100px;
+  display: block;
+}
+.header .nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .nav a {
+  color: rgba(0,0,0,0.54);
+  height: 60px;
+  line-height: 60px;
+  padding: 0 30px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.header .nav a:hover {
+  background-color: rgba(0,0,0,0.02) !important;
+}
+.header .nav a:active {
+  background-color: rgba(0,0,0,0.04) !important;
+}
+.header .nav a:hover {
+  color: rgba(0,0,0,0.88);
+}
+.header .nav a.current {
+  color: rgba(0,0,0,0.88);
+}
+.header .nav a.current span {
+  height: 100%;
+  display: block;
+  border-bottom: 3px solid #000;
+  font-weight: 700;
+}
+.header .dir {
+  line-height: 40px;
+  padding: 0 10px;
+  display: none;
+  margin-right: -10px;
+}
+.header .dir .icon {
+  font-size: 20px;
+}
+.header-fixed {
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.04);
+}
+@media screen and (max-width: 767px) {
+  .header {
+    width: 100%;
+    padding: 2px 16px;
+  }
+  .header .logo a {
+    margin-top: 5px;
+    height: 30px;
+    width: 70px;
+  }
+  .header .nav {
+    display: none;
+  }
+  .header .dir {
+    display: block;
+  }
+}
+.footer {
+  position: relative;
+  z-index: 20;
+  background-color: #1e1e1e;
+  color: #999;
+  font-size: 14px;
+}
+.footer a {
+  color: #999;
+}
+.footer a:hover {
+  color: #38f;
+}
+.footer .inner {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+.footer .menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer .menu dt {
+  font-size: 18px;
+  line-height: 18px;
+  padding-bottom: 20px;
+  color: #fff;
+}
+.footer .menu dd {
+  line-height: 30px;
+}
+.footer .wise {
+  display: none;
+  line-height: 28px;
+}
+.footer .wise a {
+  display: inline-block;
+  border-radius: 3px;
+  background-color: rgba(255,255,255,0.02);
+  padding: 0 8px;
+  margin-right: 16px;
+}
+.footer .copyright {
+  text-align: center;
+  padding-top: 90px;
+  color: rgba(153,153,153,0.54);
+}
+@media screen and (max-width: 767px) {
+  .footer .inner {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .footer .pc {
+    display: none;
+  }
+  .footer .wise {
+    display: block;
+  }
+  .footer .copyright {
+    padding-top: 16px;
+    text-align: left;
+  }
+}
+body {
+  min-width: 320px;
+}
+.main-fixed {
+  margin-top: 60px;
+}
+#sidebar {
+  z-index: 19999 !important;
+}
+#sidebar > ul {
+  padding-top: 50px;
+}
+.MIP-SIDEBAR-MASK {
+  z-index: 19998 !important;
+}
+@media screen and (max-width: 767px) {
+  .main-fixed {
+    margin-top: 44px;
+  }
+}
+.banner {
+  box-sizing: content-box;
+  position: relative;
+  height: 468px;
+  overflow: hidden;
+}
+.banner:after {
+  z-index: 1;
+  content: '';
+  background: url("img/index/banner.jpg") no-repeat center bottom;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+}
+.banner .inner {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  z-index: 10;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.banner h1 {
+  font-weight: 700;
+  margin: 0;
+  padding-bottom: 13px;
+  font-size: 81px;
+  letter-spacing: 6.07px;
+}
+.banner .text {
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+.banner .started {
+  padding-top: 46px;
+}
+.banner .started a {
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #1d63eb;
+  border-radius: 3px;
+  color: #fff;
+}
+.banner .started a:hover {
+  background-color: #2e6fec;
+}
+.banner .started a:active {
+  background-color: #1a5bd8;
+}
+.banner .started .icon {
+  font-size: 10px;
+}
+@media screen and (max-width: 767px) {
+  .banner {
+    height: 700px;
+  }
+  .banner .inner {
+    top: 0;
+    -webkit-transform: none;
+            transform: none;
+    text-align: center;
+  }
+  .banner h1 {
+    padding-top: 61px;
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 4px;
+  }
+  .banner .text {
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 12px;
+  }
+  .banner .started {
+    padding-top: 28px;
+  }
+  .banner .started a {
+    width: 154px;
+    height: 36px;
+    line-height: 36px;
+  }
+  .banner:after {
+    background-position: 80% bottom;
+    background-size: 190%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .banner {
+    height: 600px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .banner {
+    height: 520px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .banner {
+    height: 480px;
+  }
+}
+.intro {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.intro ul {
+  padding: 45px 0;
+  height: 54px;
+  box-sizing: content-box;
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.intro ul li {
+  position: relative;
+  padding-left: 64px;
+}
+.intro .img {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 54px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  width: 54px;
+}
+.intro .icon {
+  font-size: 30px;
+  color: #333;
+}
+.intro .icon.icon-code {
+  font-size: 40px;
+}
+.intro h3 {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000;
+}
+.intro p {
+  line-height: 16px;
+  color: #999;
+}
+.intro .wise {
+  padding-top: 16px;
+  display: none;
+  font-size: 14px;
+  line-height: 14px;
+}
+@media screen and (max-width: 950px) {
+  .intro {
+    text-align: center;
+  }
+  .intro .wise {
+    display: block;
+  }
+  .intro .pc {
+    display: none;
+  }
+  .intro ul {
+    height: auto;
+    padding: 32px 16px;
+  }
+  .intro ul li {
+    padding-left: 0;
+  }
+  .intro .img {
+    display: block;
+    border: none;
+    border-radius: none;
+    position: relative;
+    height: 25px;
+    line-height: 25px;
+    margin: 0 auto;
+  }
+  .intro .icon {
+    font-size: 25px;
+  }
+  .intro .icon.icon-code {
+    font-size: 35px;
+    margin-top: -5px;
+  }
+  .intro p {
+    color: rgba(0,0,0,0.88);
+    font-size: 14px;
+  }
+}
+.widget .inner {
+  position: relative;
+  height: 720px;
+  overflow: hidden;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.widget .inner .content {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.widget .inner .content h3 {
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 42px;
+}
+.widget .inner .content p {
+  color: #999;
+  font-size: 20px;
+  line-height: 20px;
+  padding-top: 20px;
+}
+.widget .inner .content .btn {
+  margin: 0;
+  margin-top: 30px;
+  border-color: #000;
+  color: #000;
+  font-size: 14px;
+}
+.widget .inner .content .btn:hover {
+  background-color: rgba(0,0,0,0.02) !important;
+}
+.widget .inner .content .btn:active {
+  background-color: rgba(0,0,0,0.04) !important;
+}
+.widget .inner .content .btn .icon {
+  font-size: 10px;
+}
+.widget .inner .img {
+  position: absolute;
+}
+.widget.widget-gray {
+  background-color: #fafafa;
+}
+.widget.widget-design .img {
+  width: 681px;
+  height: 660px;
+  right: 0;
+  top: 35px;
+}
+.widget.widget-develop .content {
+  left: 724px;
+}
+.widget.widget-develop .img {
+  left: 0;
+  top: 35px;
+  width: 684px;
+  height: 660px;
+}
+.widget.widget-components .img {
+  width: 696px;
+  height: 628px;
+  right: 0;
+  top: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .widget .inner {
+    height: auto;
+    padding: 38px 0;
+  }
+  .widget .inner .img {
+    position: static;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .widget .inner .content {
+    position: static;
+    text-align: center;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .widget .inner .content h3 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .widget .inner .content p {
+    font-size: 14px;
+    line-height: 14px;
+    padding-top: 14px;
+  }
+  .widget .inner .content .btn {
+    margin-top: 24px;
+  }
+}
+.shortcut {
+  padding: 90px 0;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.shortcut h2 {
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.shortcut ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  padding-top: 45px;
+  margin-left: -40px;
+}
+.shortcut ul li {
+  width: 33.33%;
+  padding-left: 40px;
+}
+.shortcut ul a {
+  position: relative;
+  text-align: center;
+  display: block;
+  border: 1px solid #f1f1f1;
+  border-radius: 6px;
+  padding-top: 45px;
+  padding-bottom: 30px;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+}
+.shortcut ul a:active {
+  background-color: rgba(0,0,0,0.04) !important;
+}
+.shortcut ul a:hover {
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+}
+.shortcut ul a .img {
+  font-size: 75px;
+  line-height: 75px;
+  height: 75px;
+}
+.shortcut ul a .img .icon {
+  vertical-align: top;
+}
+.shortcut ul a h4 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  padding-top: 30px;
+  color: #000;
+}
+.shortcut ul a p {
+  padding-top: 20px;
+  line-height: 16px;
+  color: #999;
+}
+@media screen and (max-width: 767px) {
+  .shortcut {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .shortcut h2 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .shortcut ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    margin-bottom: -16px;
+    overflow: hidden;
+  }
+  .shortcut ul li {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 16px;
+  }
+  .shortcut ul a {
+    border-radius: 3px;
+    text-align: left;
+    height: auto;
+    padding: 22px 0 22px 72px;
+  }
+  .shortcut ul a:hover {
+    box-shadow: none;
+  }
+  .shortcut ul a .img {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    margin-top: -20px;
+    font-size: 40px;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+  }
+  .shortcut ul a h4 {
+    font-size: 18px;
+    line-height: 18px;
+    padding: 0;
+  }
+  .shortcut ul a p {
+    font-size: 14px;
+    line-height: 14px;
+    padding-top: 8px;
+  }
+}
+
+        </style>
+    
+    
+    <noscript>
+        <style mip-officialrelease>
+            body {
+                -webkit-animation: none;
+                   -moz-animation: none;
+                    -ms-animation: none;
+                        animation: none;
+            }
+        </style>
+    </noscript>
+</head>
+
+<body>
+    
+    
+        <header class="header">
+    <h1 class="logo">
+        <a href="/" data-type="mip">mipx 官网</a>
+    </h1>
+    <nav class="nav">
+        
+            <a href="/" class="current">
+                <span>主页</span>
+            </a>
+        
+            <a href="/templates.html#top">
+                <span>模板</span>
+            </a>
+        
+            <a href="/story.html">
+                <span>小故事</span>
+            </a>
+        
+            <a href="/started.html">
+                <span>指南</span>
+            </a>
+        
+            <a href="/about.html">
+                <span>关于</span>
+            </a>
+        
+            <a href="https://github.com/mipengine">
+                <span>GitHub</span>
+            </a>
+        
+    </nav>
+    <div class="dir" on="tap:sidebar.open">
+        <i class="icon icon-menulist"></i>
+    </div>
+</header>
+
+    
+
+    
+    <div class="main">
+        
+    <div class="banner">
+        <div class="inner">
+            <h1>MIPX</h1>
+            <p class="text">精美的模板和组件</p>
+            <p class="text">帮你构建快速响应的MIP</p>
+            <p class="started">
+                <a href="/started.html">立即开始<i class="icon icon-play"></i></a>
+            </p>
+        </div>
+    </div>
+
+    <div class="intro">
+        <ul>
+            <li>
+                <div class="img">
+                    <i class="icon icon-components"></i>
+                </div>
+                <h3 class="pc">丰富多样的组件库</h3>
+                <p class="pc gap-top">提供上百个组件 站长即插即用</p>
+                <p class="wise">组件丰富</p>
+            </li>
+            <li>
+                <div class="img">
+                    <i class="icon icon-menu"></i>
+                </div>
+                <h3 class="pc">优质的模板示例</h3>
+                <p class="pc gap-top">覆盖多类型站点 提升浏览体验</p>
+                <p class="wise">模板优质</p>
+            </li>
+            <li>
+                <div class="img">
+                    <i class="icon icon-code"></i>
+                </div>
+                <h3 class="pc">下载可复用的代码</h3>
+                <p class="pc gap-top">模板轻松下载 组件代码复制即用</p>
+                <p class="wise">代码复用</p>
+            </li>
+        </ul>
+    </div>
+
+    <section class="widget widget-gray widget-design">
+        <div class="inner">
+            <div class="img">
+                <mip-img layout="responsive" alt="设计精美" src="./img/index/design.jpg" width="681" height="660"></mip-img>
+            </div>
+            <div class="content">
+                <h3>设计精美</h3>
+                <p class="line-clamp1">覆盖多类型站点 提升浏览体验</p>
+                <a href="/templates.html#top" class="btn btn-outline">查看详情<i class="icon icon-play"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="widget widget-develop">
+        <div class="inner">
+            <div class="img">
+                <mip-img layout="responsive" alt="易于开发" src="./img/index/develop.jpg" width="684" height="660"></mip-img>
+            </div>
+            <div class="content">
+                <h3>易于开发</h3>
+                <p class="line-clamp1">模板轻松下载 组件代码复制即可</p>
+                <a href="/templates.html#top" class="btn btn-outline">查看详情<i class="icon icon-play"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="widget widget-gray widget-components">
+        <div class="inner">
+            <div class="img">
+                <mip-img layout="responsive" alt="页面组件" src="./img/index/components.jpg" width="696" height="628"></mip-img>
+            </div>
+            <div class="content">
+                <h3>页面组件</h3>
+                <p class="line-clamp1">提供上百个组件 站长即插即用</p>
+                <a href="#" class="btn btn-outline">查看详情<i class="icon icon-play"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <div class="shortcut">
+        <h2>快速入口</h2>
+        <ul>
+            <li>
+                <a href="/started.html">
+                    <div class="img"><i class="icon icon-compass"></i></div>
+                    <h4 class="line-clamp1">使用指南</h4>
+                    <p class="line-clamp1">如何使用 mipx 帮你快速建立 MIP 站</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mipengine.org">
+                    <div class="img"><i class="icon icon-mip"></i></div>
+                    <h4 class="line-clamp1">MIP 介绍</h4>
+                    <p class="line-clamp1">更多 MIP 信息和知识</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/mipengine">
+                    <div class="img"><i class="icon icon-github"></i></div>
+                    <h4 class="line-clamp1">GitHub</h4>
+                    <p class="line-clamp1">MIP 开源技术</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    </div>
+
+    
+    <footer class="footer">
+    <div class="inner">
+        <div class="menu pc">
+            <dl>
+                <dt>模板</dt>
+                <dd><a href="/templates.html#小说">小说</a></dd>
+            </dl>
+            <dl>
+                <dt>技术支持</dt>
+                <dd><a href="/about.html">关于 mipx</a></dd>
+                <dd><a href="https://github.com/mipengine/page-design/issues/new?title=%E5%8F%8D%E9%A6%88%E9%97%AE%E9%A2%98">反馈问题</a></dd>
+                <dd><a href="https://github.com/mipengine/page-design/blob/master/CONTRIBUTING.md">贡献指南</a></dd>
+            </dl>
+            <dl>
+                <dt>联系我们</dt>
+                <dd><a href="http://www.cnblogs.com/mipengine">MIP官方博客</a></dd>
+                <dd><a href="//shang.qq.com/wpa/qunwpa?idkey=5c6f03c0bbe2958e5a808e0ed1680d91c016a29d1dba67bed5fa6877ca4cf2e9" target="_blank">QQ群：580967494</a></dd>
+            </dl>
+        </div>
+        <div class="wise">
+            <span>联系我们：</span>
+            <a href="http://www.cnblogs.com/mipengine">MIP 官方博客</a>
+            <span>QQ群 580967494</span>
+        </div>
+        <div class="copyright">
+            &copy; 2018 MIP - 京ICP证030173号
+        </div>
+    </div>
+</footer>
+
+    <mip-stats-baidu token="ba1a1101ebb8f48de2cd80f3d9b19338"></mip-stats-baidu>
+
+    <mip-sidebar
+    id="sidebar"
+    side="right"
+    layout="nodisplay"
+    class="mip-hidden">
+    <ul>
+        
+            <li>
+                <a href="/" class="active">
+                    主页
+                </a>
+
+                
+            </li>
+        
+            <li>
+                <a href="/templates.html#top">
+                    模板
+                </a>
+
+                
+            </li>
+        
+            <li>
+                <a href="/story.html">
+                    小故事
+                </a>
+
+                
+            </li>
+        
+            <li>
+                <a href="/started.html">
+                    指南
+                </a>
+
+                
+            </li>
+        
+            <li>
+                <a href="/about.html">
+                    关于
+                </a>
+
+                
+            </li>
+        
+            <li>
+                <a href="https://github.com/mipengine">
+                    GitHub
+                </a>
+
+                
+            </li>
+        
+  </ul>
+</mip-sidebar>
+
+
+    <script src="https://c.mipcdn.com/static/v1/mip.js"></script>
+
+
+    
+        <script src="https://c.mipcdn.com/static/v1/mip-sidebar/mip-sidebar.js"></script>
+    
+        <script src="https://c.mipcdn.com/static/v1/mip-fixed/mip-fixed.js"></script>
+    
+        <script src="https://c.mipcdn.com/static/v1/mip-stats-baidu/mip-stats-baidu.js"></script>
+    
+
+
+</body>
+</html>

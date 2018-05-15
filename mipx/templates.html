@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="zh-cn" mip>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <title>模板 - mipx</title>
+    <link rel="stylesheet" href="https://c.mipcdn.com/static/v1/mip.css">
+    <link rel="stylesheet" href="https://c.mipcdn.com/static/mag-design/2.0.2/mag-design.min.css">
+    <link rel="canonical" href="https://x.mipengine.org/templates.html">
+    
+    
+        <style mip-custom>
+            .header {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.header .logo {
+  margin: 0;
+  padding: 0;
+}
+.header .logo a {
+  background: url("./img/logo.png") no-repeat left center;
+  font-size: 0;
+  height: 40px;
+  margin-top: 10px;
+  background-size: contain;
+  width: 100px;
+  display: block;
+}
+.header .nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .nav a {
+  color: rgba(0,0,0,0.54);
+  height: 60px;
+  line-height: 60px;
+  padding: 0 30px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.header .nav a:hover {
+  background-color: rgba(0,0,0,0.02) !important;
+}
+.header .nav a:active {
+  background-color: rgba(0,0,0,0.04) !important;
+}
+.header .nav a:hover {
+  color: rgba(0,0,0,0.88);
+}
+.header .nav a.current {
+  color: rgba(0,0,0,0.88);
+}
+.header .nav a.current span {
+  height: 100%;
+  display: block;
+  border-bottom: 3px solid #000;
+  font-weight: 700;
+}
+.header .dir {
+  line-height: 40px;
+  padding: 0 10px;
+  display: none;
+  margin-right: -10px;
+}
+.header .dir .icon {
+  font-size: 20px;
+}
+.header-fixed {
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.04);
+}
+@media screen and (max-width: 767px) {
+  .header {
+    width: 100%;
+    padding: 2px 16px;
+  }
+  .header .logo a {
+    margin-top: 5px;
+    height: 30px;
+    width: 70px;
+  }
+  .header .nav {
+    display: none;
+  }
+  .header .dir {
+    display: block;
+  }
+}
+.footer {
+  position: relative;
+  z-index: 20;
+  background-color: #1e1e1e;
+  color: #999;
+  font-size: 14px;
+}
+.footer a {
+  color: #999;
+}
+.footer a:hover {
+  color: #38f;
+}
+.footer .inner {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+.footer .menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer .menu dt {
+  font-size: 18px;
+  line-height: 18px;
+  padding-bottom: 20px;
+  color: #fff;
+}
+.footer .menu dd {
+  line-height: 30px;
+}
+.footer .wise {
+  display: none;
+  line-height: 28px;
+}
+.footer .wise a {
+  display: inline-block;
+  border-radius: 3px;
+  background-color: rgba(255,255,255,0.02);
+  padding: 0 8px;
+  margin-right: 16px;
+}
+.footer .copyright {
+  text-align: center;
+  padding-top: 90px;
+  color: rgba(153,153,153,0.54);
+}
+@media screen and (max-width: 767px) {
+  .footer .inner {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .footer .pc {
+    display: none;
+  }
+  .footer .wise {
+    display: block;
+  }
+  .footer .copyright {
+    padding-top: 16px;
+    text-align: left;
+  }
+}
+body {
+  min-width: 320px;
+}
+.main-fixed {
+  margin-top: 60px;
+}
+#sidebar {
+  z-index: 19999 !important;
+}
+#sidebar > ul {
+  padding-top: 50px;
+}
+.MIP-SIDEBAR-MASK {
+  z-index: 19998 !important;
+}
+@media screen and (max-width: 767px) {
+  .main-fixed {
+    margin-top: 44px;
+  }
+}
+.templates {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.templates .inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.templates .article {
+  padding-bottom: 90px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  overflow: hidden;
+  padding-left: 40px;
+}
+.templates .article .section:target h2 {
+  padding-top: 120px;
+}
+.templates .article h2 {
+  padding-top: 60px;
+  font-size: 36px;
+  line-height: 36px;
+}
+.templates .article p {
+  padding-top: 20px;
+  line-height: 35px;
+}
+.templates .article .img {
+  border: 1px solid #eee;
+  border-radius: 9px;
+  max-width: 440px;
+  overflow: hidden;
+  margin-top: 35px;
+  cursor: pointer;
+  position: relative;
+}
+.templates .article .img:hover {
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+}
+.templates .article .img .wise {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.templates .article .tools {
+  max-width: 440px;
+  padding-top: 30px;
+  text-align: center;
+}
+.templates .article .tools .btn,
+.templates .article .tools button {
+  width: 100px;
+  padding: 0;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #000;
+  border: 1px solid #000;
+}
+.templates .article .tools .btn:hover,
+.templates .article .tools button:hover {
+  background-color: rgba(0,0,0,0.02) !important;
+}
+.templates .article .tools .btn:active,
+.templates .article .tools button:active {
+  background-color: rgba(0,0,0,0.04) !important;
+}
+.templates .article .tools .wise {
+  display: none;
+}
+.templates .aside {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+  width: 162px;
+}
+.templates .aside mip-scroll-anchor {
+  display: block;
+  width: 162px;
+  position: fixed;
+  top: 110px;
+  z-index: 10;
+}
+.templates .aside ul {
+  list-style: none;
+}
+.templates .aside li {
+  padding-bottom: 13px;
+}
+.templates .aside a {
+  display: block;
+  line-height: 40px;
+  height: 40px;
+  font-size: 14px;
+  color: rgba(0,0,0,0.54);
+  text-indent: 10px;
+}
+.templates .aside a:hover {
+  background-color: rgba(0,0,0,0.02);
+  color: rgba(0,0,0,0.54);
+}
+.templates .aside a.current {
+  font-weight: 700;
+  color: rgba(0,0,0,0.88);
+}
+.templates .aside a:active {
+  background-color: rgba(0,0,0,0.04) !important;
+}
+mip-mipengine-preview-v3 {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+}
+mip-mipengine-preview-v3 .preview-header {
+  position: relative;
+  z-index: 20;
+  height: 60px;
+  background-color: #fff;
+  box-shadow: 0 6px 9px 0 rgba(0,0,0,0.24);
+}
+mip-mipengine-preview-v3 .preivew-header-inner {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  height: 100%;
+  text-align: center;
+}
+mip-mipengine-preview-v3 .preivew-header-inner .btn,
+mip-mipengine-preview-v3 .preivew-header-inner button {
+  width: 100px;
+  padding: 0;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #000;
+  border: 1px solid #000;
+  margin-top: 15px;
+}
+mip-mipengine-preview-v3 .preivew-header-inner .btn:hover,
+mip-mipengine-preview-v3 .preivew-header-inner button:hover {
+  background-color: rgba(0,0,0,0.02) !important;
+}
+mip-mipengine-preview-v3 .preivew-header-inner .btn:active,
+mip-mipengine-preview-v3 .preivew-header-inner button:active {
+  background-color: rgba(0,0,0,0.04) !important;
+}
+mip-mipengine-preview-v3 .preview-close {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 24px;
+  height: 60px;
+  line-height: 60px;
+  width: 60px;
+  text-align: center;
+}
+mip-mipengine-preview-v3 .preview-close:hover {
+  background-color: rgba(0,0,0,0.02) !important;
+}
+mip-mipengine-preview-v3 .preview-close:active {
+  background-color: rgba(0,0,0,0.04) !important;
+}
+mip-mipengine-preview-v3 .preview-box {
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  padding-top: 60px;
+  background-color: rgba(255,255,255,0.8);
+}
+mip-mipengine-preview-v3 .preview-iframe {
+  width: 375px;
+  height: 667px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 56px 25px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0 15px 30px 0 rgba(0,0,0,0.2);
+  border-radius: 50px;
+  box-sizing: content-box;
+}
+mip-mipengine-preview-v3 .preview-iframe iframe {
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgba(156,156,156,0.31);
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 767px) {
+  .templates .aside {
+    display: none;
+  }
+  .templates .article {
+    padding-bottom: 60px;
+    border-left: none;
+    padding-left: 0;
+  }
+  .templates .article h2 {
+    font-size: 24px;
+    line-height: 24px;
+    padding-top: 60px;
+  }
+  .templates .article h2 + p {
+    padding-top: 16px;
+  }
+  .templates .article p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .templates .article .img {
+    max-width: 767px;
+  }
+  .templates .article .img .wise {
+    display: block;
+  }
+  .templates .article .tools {
+    max-width: 767px;
+    padding-top: 36px;
+  }
+  .templates .article .tools .pc {
+    display: none;
+  }
+  .templates .article .tools .wise {
+    display: inline-block;
+  }
+}
+
+        </style>
+    
+    
+    <noscript>
+        <style mip-officialrelease>
+            body {
+                -webkit-animation: none;
+                   -moz-animation: none;
+                    -ms-animation: none;
+                        animation: none;
+            }
+        </style>
+    </noscript>
+</head>
+
+<body>
+    
+    
+        <mip-fixed type="top" class="header-fixed">
+    <header class="header">
+    <h1 class="logo">
+        <a href="/" data-type="mip">mipx 官网</a>
+    </h1>
+    <nav class="nav">
+        
+            <a href="/">
+                <span>主页</span>
+            </a>
+        
+            <a href="/templates.html#top" class="current">
+                <span>模板</span>
+            </a>
+        
+            <a href="/story.html">
+                <span>小故事</span>
+            </a>
+        
+            <a href="/started.html">
+                <span>指南</span>
+            </a>
+        
+            <a href="/about.html">
+                <span>关于</span>
+            </a>
+        
+            <a href="https://github.com/mipengine">
+                <span>GitHub</span>
+            </a>
+        
+    </nav>
+    <div class="dir" on="tap:sidebar.open">
+        <i class="icon icon-menulist"></i>
+    </div>
+</header>
+
+</mip-fixed>
+
+    
+
+    
+    <div class="main main-fixed">
+        
+    <div class="templates">
+        <div class="inner">
+            <aside class="aside">
+                <mip-scroll-anchor data-current-class="current">
+                    <ul>
+                        
+                            <li>
+                                <a href="#小说" anchor="小说">小说</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#通用问答" anchor="通用问答">通用问答</a>
+                            </li>
+                        
+                    </ul>
+                </mip-scroll-anchor>
+            </aside>
+            <article class="article">
+                
+                    <section class="section" id="小说">
+                        <h2>小说</h2>
+                        <p>小说类型模板，给小说站点带来NA化的体验。</p>
+                        <div class="img">
+                            <mip-img
+                                on="tap:preview0.open(/html/templates/xiaoshuo/xiaoshuo.html)"
+                                layout="responsive"
+                                src="../html/templates/xiaoshuo/img/logo.jpg"
+                                width="440"
+                                height="783"
+                            ></mip-img>
+                            <a href="/html/templates/xiaoshuo/xiaoshuo.html" data-type="mip" class="wise"></a>
+                        </div>
+                        <div class="tools">
+                            <button class="btn-outline pc" on="tap:preview0.open(/html/templates/xiaoshuo/xiaoshuo.html)">预览</button>
+                            <a href="/html/templates/xiaoshuo/xiaoshuo.html" data-type="mip" class="btn btn-outline wise">预览</a>
+                            <a href="/archive/xiaoshuo.zip" class="btn btn-outline">下载</a>
+                        </div>
+
+                        <mip-mipengine-preview-v3 id="preview0" layout="nodisplay" mode="mobile">
+                            <div class="preview-header">
+                                <div class="preivew-header-inner">
+                                    <a href="/archive/xiaoshuo.zip" class="btn btn-outline">下载</a>
+                                    <div class="preview-close" on="tap:preview0.close" title="点击关闭预览">
+                                        <i class="icon icon-close1"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="preview-box">
+                                <div class="preview-iframe" iframe>
+                                </div>
+                            </div>
+                        </mip-mipengine-preview-v3>
+                    </section>
+                
+                    <section class="section" id="通用问答">
+                        <h2>通用问答</h2>
+                        <p>通用问答模板，可以覆盖常用的消息对话、评论等。</p>
+                        <div class="img">
+                            <mip-img
+                                on="tap:preview1.open(/html/templates/wenda/wenda.html)"
+                                layout="responsive"
+                                src="../html/templates/wenda/img/logo.png"
+                                width="440"
+                                height="783"
+                            ></mip-img>
+                            <a href="/html/templates/wenda/wenda.html" data-type="mip" class="wise"></a>
+                        </div>
+                        <div class="tools">
+                            <button class="btn-outline pc" on="tap:preview1.open(/html/templates/wenda/wenda.html)">预览</button>
+                            <a href="/html/templates/wenda/wenda.html" data-type="mip" class="btn btn-outline wise">预览</a>
+                            <a href="/archive/wenda.zip" class="btn btn-outline">下载</a>
+                        </div>
+
+                        <mip-mipengine-preview-v3 id="preview1" layout="nodisplay" mode="mobile">
+                            <div class="preview-header">
+                                <div class="preivew-header-inner">
+                                    <a href="/archive/wenda.zip" class="btn btn-outline">下载</a>
+                                    <div class="preview-close" on="tap:preview1.close" title="点击关闭预览">
+                                        <i class="icon icon-close1"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="preview-box">
+                                <div class="preview-iframe" iframe>
+                                </div>
+                            </div>
+                        </mip-mipengine-preview-v3>
+                    </section>
+                
+            </article>
+        </div>
+    </div>
+
+
+
+    </div>
+
+    
+    <footer class="footer">
+    <div class="inner">
+        <div class="menu pc">
+            <dl>
+                <dt>模板</dt>
+                <dd><a href="/templates.html#小说">小说</a></dd>
+            </dl>
+            <dl>
+                <dt>技术支持</dt>
+                <dd><a href="/about.html">关于 mipx</a></dd>
+                <dd><a href="https://github.com/mipengine/page-design/issues/new?title=%E5%8F%8D%E9%A6%88%E9%97%AE%E9%A2%98">反馈问题</a></dd>
+                <dd><a href="https://github.com/mipengine/page-design/blob/master/CONTRIBUTING.md">贡献指南</a></dd>
+            </dl>
+            <dl>
+                <dt>联系我们</dt>
+                <dd><a href="http://www.cnblogs.com/mipengine">MIP官方博客</a></dd>
+                <dd><a href="//shang.qq.com/wpa/qunwpa?idkey=5c6f03c0bbe2958e5a808e0ed1680d91c016a29d1dba67bed5fa6877ca4cf2e9" target="_blank">QQ群：580967494</a></dd>
+            </dl>
+        </div>
+        <div class="wise">
+            <span>联系我们：</span>
+            <a href="http://www.cnblogs.com/mipengine">MIP 官方博客</a>
+            <span>QQ群 580967494</span>
+        </div>
+        <div class="copyright">
+            &copy; 2018 MIP - 京ICP证030173号
+        </div>
+    </div>
+</footer>
+
+    <mip-stats-baidu token="ba1a1101ebb8f48de2cd80f3d9b19338"></mip-stats-baidu>
+
+    <mip-sidebar
+    id="sidebar"
+    side="right"
+    layout="nodisplay"
+    class="mip-hidden">
+    <ul>
+        
+            <li>
+                <a href="/">
+                    主页
+                </a>
+
+                
+            </li>
+        
+            <li>
+                <a href="/templates.html#top" class="active">
+                    模板
+                </a>
+
+                
+                    <ul>
+                        
+                            <li>
+                                <a href="#小说">小说</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#通用问答">通用问答</a>
+                            </li>
+                        
+                    </ul>
+                
+            </li>
+        
+            <li>
+                <a href="/story.html">
+                    小故事
+                </a>
+
+                
+            </li>
+        
+            <li>
+                <a href="/started.html">
+                    指南
+                </a>
+
+                
+            </li>
+        
+            <li>
+                <a href="/about.html">
+                    关于
+                </a>
+
+                
+            </li>
+        
+            <li>
+                <a href="https://github.com/mipengine">
+                    GitHub
+                </a>
+
+                
+            </li>
+        
+  </ul>
+</mip-sidebar>
+
+
+    <script src="https://c.mipcdn.com/static/v1/mip.js"></script>
+
+
+    
+        <script src="https://c.mipcdn.com/static/v1/mip-sidebar/mip-sidebar.js"></script>
+    
+        <script src="https://c.mipcdn.com/static/v1/mip-fixed/mip-fixed.js"></script>
+    
+        <script src="https://c.mipcdn.com/static/v1/mip-stats-baidu/mip-stats-baidu.js"></script>
+    
+        <script src="https://c.mipcdn.com/static/v1/mip-scroll-anchor/mip-scroll-anchor.js"></script>
+    
+        <script src="https://c.mipcdn.com/static/v1/mip-mipengine-preview-v3/mip-mipengine-preview-v3.js"></script>
+    
+
+
+</body>
+</html>

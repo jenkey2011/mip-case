@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-cn" mip>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <title>Hello World</title>
+    <link rel="stylesheet" href="https://c.mipcdn.com/static/v1/mip.css">
+    <link rel="stylesheet" href="https://c.mipcdn.com/static/mag-design/2.0.2/mag-design.min.css">
+    <link rel="canonical" href="https://www.mipengine.org/">
+    
+    
+        <style mip-custom>
+            .container {
+  padding-bottom: 51px;
+  overflow-x: hidden;
+}
+.med-ask-btn {
+  background-color: #02b7ca;
+  color: #fff;
+  font-size: 18px;
+  height: 44px;
+  line-height: 44px;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  pointer-events: initial;
+  text-align: center;
+}
+.med-img-content-img {
+  border-radius: 50%;
+}
+.article-main-content p,
+.article-main-content div,
+.article-main-content img {
+  margin: 24px 0;
+  line-height: 28px;
+}
+button:active {
+  background-color: #02b7ca;
+}
+.c-color {
+  color: #333;
+}
+.c-color-gray {
+  color: #999;
+}
+.c-text-box {
+  display: inline-block;
+  padding: 1px 2px;
+  margin-bottom: 2px;
+  text-decoration: none;
+  vertical-align: middle;
+  font-size: 10px;
+  line-height: 11px;
+  height: 10px;
+  font-style: normal;
+  font-weight: 400;
+  overflow: hidden;
+  box-sizing: content-box;
+  border-radius: 2px;
+}
+.c-text-box-wenda {
+  color: #01b7c9;
+  border: 1px solid #01b7c9;
+}
+.c-color-wenda {
+  color: #01b7c9;
+}
+.align-direction {
+  text-align: center;
+}
+.med-line-height {
+  line-height: 24px;
+}
+.med-normal-title {
+  font-weight: normal;
+}
+.med-line-height26 {
+  line-height: 26px;
+}
+.med-line-height28 {
+  line-height: 28px;
+}
+.med-margin-reduce {
+  margin-top: -3px;
+}
+.med-tips-info {
+  background: #d8d8d8;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 5px 10px;
+  color: #fff;
+}
+.med-message-text {
+  position: relative;
+}
+.med-message-text-left,
+.med-message-text-right {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 0;
+}
+.med-message-text-right {
+  right: 0;
+}
+.med-message-text-center,
+.med-message-img-center {
+  margin: 15px 51px;
+}
+.med-message-text-center-inner,
+.med-message-img-center-inner {
+  border: 1px solid #e9e9e9;
+  -webkit-border-radius: 4px;
+  padding: 8px 12px;
+  display: inline-block;
+  text-align: left;
+  word-wrap: break-word;
+  max-width: 100%;
+  font-size: 15px;
+  line-height: 22px;
+  box-sizing: border-box;
+  position: relative;
+  min-width: 47px;
+}
+.mag-img-circle,
+.mag-img-circle img {
+  border-radius: 50%;
+}
+.med-message-user .med-message-text-center-inner,
+.med-message-user .med-message-img-center-inner {
+  background: #02b7ca;
+  color: #fff;
+  border: none;
+}
+.med-message-user .med-message-text-center,
+.med-message-user .med-message-img-center {
+  text-align: right;
+}
+.angle-border,
+.angle {
+  position: absolute;
+  top: 14px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-top: 0.07rem dotted transparent;
+  border-bottom: 0.07rem dotted transparent;
+}
+.med-message-doctor .angle-border {
+  right: -17px;
+  border-right: 0.07rem solid #fff;
+  z-index: 2;
+}
+.med-message-doctor .angle {
+  right: -16px;
+  border-right: 0.07rem solid #e2e2e2;
+}
+.med-message-doctor .med-mip-audio-icon {
+  display: inline-block;
+  width: 14px;
+  height: 19px;
+  background: url("./img/audio2.jpg") left center no-repeat;
+  background-size: cover;
+  margin: 10px 0 0 10px;
+}
+.med-message-doctor .mip-audio-play-pause {
+  background: #fff;
+  border: 1px solid #e9e9e9;
+}
+.med-message-user .angle {
+  left: -18px;
+  border-left: 0.07rem solid #02b7ca;
+  z-index: 1;
+}
+.med-message-img-audio-center {
+  max-width: 100%;
+}
+.med-mip-audio-controller {
+  position: relative;
+}
+.mip-audio-play-pause {
+  max-width: 100%;
+  width: 60%;
+  height: 40px;
+  display: inline-block;
+  position: relative;
+  border-radius: 4px;
+  background: #02b7ca;
+}
+.med-mip-audio-icon {
+  display: inline-block;
+  width: 14px;
+  height: 19px;
+  background: url("./img/audio.jpg") right center no-repeat;
+  background-size: cover;
+  margin: 10px 10px 0 0;
+}
+.med-mip-audio-time {
+  position: relative;
+  top: -4px;
+}
+.mip-audio {
+  display: none;
+}
+.med-showmore p {
+  margin: 10px;
+}
+.med-showmore-btn {
+  display: block !important;
+  position: relative;
+}
+.med-showmore-btn .icon {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  font-weight: bold;
+  transform: rotate(315deg);
+  -webkit-transform: rotate(315deg);
+  margin-bottom: 3px;
+}
+.mip-showmore-open .icon {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  margin-bottom: 0;
+}
+.mip-showmore-open .show {
+  display: block;
+}
+.mip-showmore-open .hidden {
+  display: none;
+}
+.med-article-showmore-gap .article-main-content p:first-child,
+.med-article-showmore-gap .article-main-content div:first-child {
+  margin-top: 0;
+}
+.show {
+  display: none;
+}
+.hidden {
+  display: block;
+}
+
+        </style>
+    
+    
+    <noscript>
+        <style mip-officialrelease>
+            body {
+                -webkit-animation: none;
+                   -moz-animation: none;
+                    -ms-animation: none;
+                        animation: none;
+            }
+        </style>
+    </noscript>
+</head>
+
+<body>
+    
+    
+<div class="container">
+    <!--友情提示-->
+    <div class="med-tips-container align-direction">
+        <p class="font-size-s c-color-gray align-direction">医生回复仅为建议，进一步确诊请到线下医院</p>
+        <div class="med-tips-info font-size-xs gap-top"><span class="gap-right-small"></span><span>23412人已阅读</span></div>
+    </div>
+
+    <!--消息对话-->
+    <mip-showmore maxheight='400' animatetime='.3' id="med-showmore" bottomshadow='1' class="med-article-showmore-gap">
+
+    <div class="med-message-content">
+        
+            <section class="med-message-text gap-top-large  med-message-user ">
+                <div class=" med-message-text-right ">
+                    
+                    <div class="angle"></div>
+                    <div><mip-img src="https://ss1.baidu.com/70cFfyinKgQFm2e88IuM_a/ps_wenda/pic/item/0e2442a7d933c895291245a8db1373f0830200f1.jpg" class="mag-img-circle"/></div>
+                </div>
+
+                
+                    <div class="med-message-text-center">
+                        <div class="med-message-text-center-inner">最近身体不太好，晚上经常浅睡眠，早上起来头晕乎乎的，没什么精神，我是不是生病了？好难受</div>
+                    </div>
+                
+            </section>
+        
+            <section class="med-message-text gap-top-large  med-message-user ">
+                <div class=" med-message-text-right ">
+                    
+                    <div class="angle"></div>
+                    <div><mip-img src="https://ss1.baidu.com/70cFfyinKgQFm2e88IuM_a/ps_wenda/pic/item/0e2442a7d933c895291245a8db1373f0830200f1.jpg" class="mag-img-circle"/></div>
+                </div>
+
+                
+                    <div class="med-message-img-center">
+                        <div class="med-message-img-center-inner">
+                            <mip-img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=1252971286,2630212558&#38;fm=58&#38;s=1436E5370730739452F4ACFC03009021&#38;w=352&#38;h=235&#38;img.PNG" />
+                        </div>
+                    </div>
+                
+            </section>
+        
+            <section class="med-message-text gap-top-large  med-message-user ">
+                <div class=" med-message-text-right ">
+                    
+                    <div class="angle"></div>
+                    <div><mip-img src="https://ss1.baidu.com/70cFfyinKgQFm2e88IuM_a/ps_wenda/pic/item/0e2442a7d933c895291245a8db1373f0830200f1.jpg" class="mag-img-circle"/></div>
+                </div>
+
+                
+                        <div class="med-message-img-center">
+
+                            <mip-audio
+                            src="https://mip-doc.bj.bcebos.com/guitar.mp3"
+                            controls
+                            layout="container"
+                            >
+                                <div class="med-mip-audio-controller gap-top-large" controller>
+                                    <span class="med-mip-audio-time font-size-s c-color-gray audio-time-total" total-time></span>
+                                    <div class="mip-audio-play-pause audio-control" play-button>
+                                        <span class="med-mip-audio-icon"></span>
+                                    </div>
+                                    
+                                </div>
+                            </mip-audio>
+                    </div>
+                
+            </section>
+        
+            <section class="med-message-text gap-top-large  med-message-doctor ">
+                <div class=" med-message-text-left ">
+                     <div class="angle-border"></div> 
+                    <div class="angle"></div>
+                    <div><mip-img src="https://ss1.baidu.com/70cFfyinKgQFm2e88IuM_a/ps_wenda/pic/item/0e2442a7d933c895291245a8db1373f0830200f1.jpg" class="mag-img-circle"/></div>
+                </div>
+
+                
+                        <div class="med-message-img-center">
+
+                            <mip-audio
+                            src="https://mip-doc.bj.bcebos.com/guitar.mp3"
+                            controls
+                            layout="container"
+                            >
+                                <div class="med-mip-audio-controller gap-top-large" controller>
+                                    
+                                    <div class="mip-audio-play-pause audio-control" play-button>
+                                        <span class="med-mip-audio-icon"></span>
+                                    </div>
+                                    <span class="med-mip-audio-time font-size-s c-color-gray audio-time-total" total-time></span>
+                                </div>
+                            </mip-audio>
+                    </div>
+                
+            </section>
+        
+            <section class="med-message-text gap-top-large  med-message-doctor ">
+                <div class=" med-message-text-left ">
+                     <div class="angle-border"></div> 
+                    <div class="angle"></div>
+                    <div><mip-img src="https://ss1.baidu.com/70cFfyinKgQFm2e88IuM_a/ps_wenda/pic/item/0e2442a7d933c895291245a8db1373f0830200f1.jpg" class="mag-img-circle"/></div>
+                </div>
+
+                
+                    <div class="med-message-text-center">
+                        <div class="med-message-text-center-inner">持续多长时间了，经常这样吗？</div>
+                    </div>
+                
+            </section>
+        
+            <section class="med-message-text gap-top-large  med-message-doctor ">
+                <div class=" med-message-text-left ">
+                     <div class="angle-border"></div> 
+                    <div class="angle"></div>
+                    <div><mip-img src="https://ss1.baidu.com/70cFfyinKgQFm2e88IuM_a/ps_wenda/pic/item/0e2442a7d933c895291245a8db1373f0830200f1.jpg" class="mag-img-circle"/></div>
+                </div>
+
+                
+                    <div class="med-message-text-center">
+                        <div class="med-message-text-center-inner">生活中注意早中晚三餐规律饮食，特别是早餐不能少，每天工作需要适当休息，中午午休15分钟左右能够很好的调节你的疲劳感...</div>
+                    </div>
+                
+            </section>
+        
+            <section class="med-message-text gap-top-large  med-message-doctor ">
+                <div class=" med-message-text-left ">
+                     <div class="angle-border"></div> 
+                    <div class="angle"></div>
+                    <div><mip-img src="https://ss1.baidu.com/70cFfyinKgQFm2e88IuM_a/ps_wenda/pic/item/0e2442a7d933c895291245a8db1373f0830200f1.jpg" class="mag-img-circle"/></div>
+                </div>
+
+                
+                    <div class="med-message-text-center">
+                        <div class="med-message-text-center-inner">每天晚上睡觉前半个小时喝一杯热牛奶，泡个热水脚，暖暖身子，有助于睡眠，睡觉前可以听听舒缓的音乐，定时关闭音乐，有利于促进睡眠。</div>
+                    </div>
+                
+            </section>
+        
+    </div>
+    </mip-showmore>
+
+    <div on="tap:med-showmore.toggle" data-closeclass="details-open" class="details">
+        <div class="details-tip-expand">收起<i class="icon icon-up"></i></div>
+        <div class="details-tip-close">展开<i class="icon icon-down"></i></div>
+    </div>
+
+</div>
+<mip-fixed type="bottom" class="med-ask-btn">
+    快速咨询
+</mip-fixed>
+
+    
+    <script src="https://c.mipcdn.com/static/v1/mip.js"></script>
+
+
+    
+        <script src="https://c.mipcdn.com/static/v1/mip-showmore/mip-showmore.js"></script>
+    
+        <script src="https://c.mipcdn.com/static/v1/mip-audio/mip-audio.js"></script>
+    
+
+
+</body>
+</html>
