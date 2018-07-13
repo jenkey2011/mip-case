@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
   <title>MIP page</title>
   <link rel="canonical" href="对应的原页面地址">
   <link rel="stylesheet" href="https://c.mipcdn.com/static/v2/mip.css">
@@ -39,26 +39,6 @@
       list-style-position: inside;
       line-height: 1.6;
     }
-
-    .heightLine {
-      border: 1px solid #000;
-      position: relative;
-    }
-
-    .heightLine::after {
-      content: '自适应高度线';
-      display: block;
-      width: 100px;
-      height: 30px;
-      line-height: 30px;
-      text-align: center;
-      background: #fff;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-
-    }
   </style>
 </head>
 
@@ -76,53 +56,29 @@
       </ul>
     </mip-tabs-item>
     <mip-tabs-item label="mip-tabs组件介绍">
-      <ul>
-        <li>0001</li>
-        <li>0002</li>
-        <li>0003</li>
-        <li>0004</li>
-        <li>0005</li>
-        <li>0006</li>
-        <li>0007</li>
-        <li>0008</li>
-        <li>0009</li>
-        <li>0010</li>
-        <li>0011</li>
-        <li>0012</li>
-        <li>0013</li>
-        <li>0014</li>
-        <li>0015</li>
-      </ul>
+      <ol>
+        <li>使用方便</li>
+        <li>动画交互</li>
+        <li>任意嵌套</li>
+        <li>自定义tab内容结构</li>
+      </ol>
     </mip-tabs-item>
-
     <mip-tabs-item label="嵌套">
-      99999
-      <!-- <mip-tabs initial-tab="0">
-          <mip-tabs-item label="嵌1"> 嵌套111111</mip-tabs-item>
-          <mip-tabs-item label="嵌2"> 嵌套222222</mip-tabs-item>
-          <mip-tabs-item label="嵌3"> 嵌套333333</mip-tabs-item>
-        </mip-tabs> -->
+      这里嵌套了另一个tab标签
+      <mip-tabs initial-tab="0">
+        <mip-tabs-item label="嵌1"> 嵌套111111</mip-tabs-item>
+        <mip-tabs-item label="嵌2"> 嵌套222222</mip-tabs-item>
+        <mip-tabs-item label="嵌3"> 嵌套333333</mip-tabs-item>
+      </mip-tabs>
     </mip-tabs-item>
-
     <mip-tabs-item label="Tab 4">
       4444444444
     </mip-tabs-item>
-
-    <mip-tabs-item label="Tab 5 ">
-      55555555
-    </mip-tabs-item>
-
     <mip-tabs-item label="暂未开放" disabled="true">
-      66666666
     </mip-tabs-item>
   </mip-tabs>
-  <div class="heightLine"></div>
   <script src="https://c.mipcdn.com/static/v2/mip.js"></script>
-  <script src="https://c.mipcdn.com/static/v2/mip.js"></script>
-  <script src="mip-tabs.js "></script>
-  <script>
-    var vConsole = new VConsole()
-  </script>
+  <script src="/mip-tabs/mip-tabs.js "></script>
 </body>
 
 </html>
