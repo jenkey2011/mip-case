@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html mip>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <title>MIP page</title>
+  <link rel="canonical" href="对应的原页面地址">
+  <link rel="stylesheet" href="https://c.mipcdn.com/static/v2/mip.css">
+  <style mip-custom>
+    /* 自定义样式 */
+
+    mip-map-test p {
+      /* display: none !important; */
+    }
+
+    .btn {
+      width: 160px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 30px;
+      text-align: center;
+      margin: 30px auto;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      background: rgb(27, 154, 247);
+      color: #ffffff;
+    }
+
+  </style>
+<script src="https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/vconsole/3.0.0/vconsole.min.js"></script>
+<script>
+  // var vConsole = new VConsole();
+</script>
+</head>
+
+<body>
+  <div>
+
+    <div class="btn" on="tap:map.getLocal"> 点我定位 </div>
+    <mip-map-test id="test">
+    </mip-map-test>
+
+<mip-map height="400" on="getPositionComplete:test.con getPositionFailed:test.fail" id="map">
+      <script type="application/json ">
+        {
+          "ak": "qTDgPcwKgEILyYHTpnNuxrgYzEl1Gpr8",
+          "hide-map": false,
+          "get-position": false,
+          "location": {
+            "province": "北京",
+            "city": "北京市",
+            "district": "东城区",
+            "street": "故宫博物馆"
+          },
+          "controls": {
+            "NavigationControl": {},
+            "MapTypeControl": {}
+          },
+          "info": {
+            "width": 250,
+            "height": 100,
+            "content": "<h4>故宫博物馆</h4><p>地址：北京市东城区景山前街4号<br/>电话：(010)65131892</p></div>"
+          }
+        }
+
+      </script>
+    </mip-map>
+  </div>
+  <script src="https://c.mipcdn.com/static/v2/mip.js "></script>
+  <script src="mip-map-test3.js "></script>
+  <script src="mip-map.js"></script>
+</body>
+
+</html>
