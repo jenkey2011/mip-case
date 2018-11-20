@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html mip lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <title>VIDEO - MIP STORY</title>
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <link rel="stylesheet" href="https://c.mipcdn.com/static/v1/mip.css">
+  <style mip-custom>
+    /* 十分important…… 
+       临时的 */
+    mip-story-video{
+      bottom: 0!important;
+      display: block!important;
+      height: auto!important;
+      left: 0!important;
+      position: absolute!important;
+      right: 0!important;
+      top: 0!important;
+      width: auto!important;
+    }
+    mip-story-video canvas {
+      display: block!important;
+      position: absolute!important;
+      top: 0!important;
+      left: 0!important;
+      bottom: 0!important;
+      right: 0!important;
+      width: 100%!important;
+      height: 100%!important;
+    }
+    mip-story-video > div {
+
+      display: block!important;
+      position: absolute!important;
+      top: 0!important;
+      left: 0!important;
+      bottom: 0!important;
+      right: 0!important;
+      background-size: 100% 100%!important;
+    }
+    .mip-story-system-layer {
+      background: -webkit-linear-gradient(top,rgba(0,0,0,0.35),transparent)!important;
+      background: linear-gradient(180deg,rgba(0,0,0,0.35),transparent)!important;
+    }
+    .bgw mip-story-video{
+      background: #fff;
+    }
+    .bgb mip-story-video{
+      background: #000;
+    }
+    .wihte {
+      color: #ffffff;
+    }
+    .black {
+      color: #000000;
+    }
+  </style>
+<script src="https://c.mipcdn.com/static/v1/mip.js"></script>
+<script src="https://c.mipcdn.com/static/v1/mip-share/mip-share.js"></script>
+<script src="https://c.mipcdn.com/static/v1/mip-story/mip-story.js"></script>
+</head>
+
+<body>
+  <mip-story standalone>
+    <script type="application/json">
+      {
+        "share": {
+          "thumbnail": "https://www.mipengine.org/static/img/mip-story/cover.jpg",
+          "background": "https://www.mipengine.org/static/img/mip-story/p8.png",
+          "title": "MIP STORY",
+          "desc": "MIP STORY VIDEO CASE",
+          "from": "Baidu"
+        }
+      }
+    </script>
+
+    <mip-story-view>
+      <mip-story-layer template="cover">
+        <mip-story-img src="../static/video-case/case1.png" layout="responsive" width="420" height="740"></mip-story-img>
+      </mip-story-layer>
+    </mip-story-view>
+<!-- 
+    <mip-story-view>
+      <mip-story-layer template="cover">
+        <mip-story-video loop layout="responsive" width="414" height="736" poster="../static/video-case/case0.jpg">
+          <source src="../static/video-case/video0.ts" type="video/ts">
+          <source src="../static/video-case/video0.mp4" type="video/mp4">
+        </mip-story-video>
+      </mip-story-layer>
+      <mip-story-layer template="under-center" class="wihte">
+        <p animate-in="fade-in">
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+        </p>
+      </mip-story-layer>
+    </mip-story-view> -->
+
+
+    <mip-story-view>
+      <mip-story-layer template="cover" class="bgw">
+        <mip-story-video loop layout="responsive" width="414" height="736" poster="../static/video-case/case2.jpg">
+          <source src="../static/video-case/gif2.ts" type="video/ts">
+          <source src="../static/video-case/gif2.mp4" type="video/mp4">
+        </mip-story-video>
+      </mip-story-layer>
+        <mip-story-layer template="under-center" class="black">
+          <p animate-in="fade-in">
+            MIP STORY. 
+            MIP STORY. 
+            MIP STORY. 
+            MIP STORY. 
+            MIP STORY. 
+            MIP STORY. 
+            MIP STORY. 
+            MIP STORY. 
+            MIP STORY. 
+            MIP STORY. 
+            MIP STORY. 
+            MIP STORY. 
+          </p>
+        </mip-story-layer>
+    </mip-story-view>
+
+    <mip-story-view>
+      <mip-story-layer template="cover"  class="bgb">
+      <mip-story-layer template="cover" >
+        <mip-story-video loop layout="responsive" width="414" height="736" poster="../static/video-case/case3.jpg">
+          <source src="../static/video-case/gif1.ts" type="video/ts">
+          <source src="../static/video-case/gif1.mp4" type="video/mp4">
+        </mip-story-video>
+      </mip-story-layer>
+        <mip-story-layer template="under-center" class="wihte">
+          <p animate-in="fade-in">
+            MIP STORY. 
+            MIP STORY. 
+            MIP STORY. 
+            MIP STORY. 
+            MIP STORY. 
+            MIP STORY. 
+            MIP STORY. 
+            MIP STORY. 
+            MIP STORY. 
+            MIP STORY. 
+            MIP STORY. 
+            MIP STORY. 
+          </p>
+        </mip-story-layer>
+    </mip-story-view>
+
+    <mip-story-view>
+      <mip-story-layer template="cover"  class="bgw">
+      <mip-story-layer template="cover" >
+        <mip-story-video loop layout="responsive" width="414" height="736" poster="../static/video-case/case5.jpg">
+          <source src="../static/video-case/gif3.ts" type="video/ts">
+          <source src="../static/video-case/gif3.mp4" type="video/mp4">
+        </mip-story-video>
+      </mip-story-layer>
+      <mip-story-layer template="under-center" class="black">
+        <p animate-in="fade-in">
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+        </p>
+      </mip-story-layer>
+    </mip-story-view>
+
+    <mip-story-view>
+      <mip-story-layer template="cover"  class="bgb">
+      <mip-story-layer template="cover" >
+        <mip-story-video loop layout="responsive" width="414" height="736" poster="../static/video-case/case4.jpg">
+          <source src="../static/video-case/video4.ts" type="video/ts">
+          <source src="../static/video-case/video4.mp4" type="video/mp4">
+        </mip-story-video>
+      </mip-story-layer>
+      <mip-story-layer template="under-center" class="wihte">
+        <p animate-in="fade-in">
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+          MIP STORY.
+        </p>
+      </mip-story-layer>
+    </mip-story-view>
+
+  </mip-story>
+
+</body>
+
+</html>

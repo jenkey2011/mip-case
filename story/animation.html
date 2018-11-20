@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html mip lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <title>奥斯卡小故事</title>
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <link rel="stylesheet" href="https://c.mipcdn.com/static/v1/mip.css">
+  <style mip-custom>
+    /* 自定义样式 */
+    mip-story-layer p {
+      color: #fff;
+      font-size: 30px!important;
+      line-height: 2!important;
+      letter-spacing: 3px;
+    }
+    #demo p {
+      font-size: 16px!important;
+    }
+  </style>
+</head>
+
+<body>
+  <mip-story standalone>
+    <script type="application/json">
+      {
+        "share": {
+          "thumbnail": "https://www.mipengine.org/static/img/mip-story/cover.jpg",
+          "background": "https://www.mipengine.org/static/img/mip-story/p8.png",
+          "title": "奥斯卡",
+          "desc": "奥斯卡颁奖典礼回顾",
+          "from": "小故事"
+        }
+      }
+    </script>
+
+    <mip-story-view>
+      <mip-story-layer template="center" id='demo'>
+        <p animate-in="fade-in">淡入</p>
+        <p animate-in="fade-in" animate-in-duration="2s">淡入 时长2秒</p>
+        <p animate-in="fade-in" animate-in-duration="2s" animate-in-delay="2s">淡入 时长2秒 延迟1秒执行</p>
+      </mip-story-layer>
+    </mip-story-view>
+
+    <mip-story-view>
+      <mip-story-layer template="center">
+        <p animate-in="fly-in-top">上飞入</p>
+        <p animate-in="fly-in-left">左飞入</p>
+        <p animate-in="fly-in-right">右飞入</p>
+        <p animate-in="fly-in-bottom">下飞入</p>
+      </mip-story-layer>
+    </mip-story-view>
+
+    <mip-story-view>
+      <mip-story-layer template="center">
+        <p animate-in="fade-in-top">上淡入</p>
+        <p animate-in="fade-in-left">左淡入</p>
+        <p animate-in="fade-in">淡入</p>
+        <p animate-in="fade-in-right">右淡入</p>
+        <p animate-in="fade-in-bottom">下淡入</p>
+      </mip-story-layer>
+    </mip-story-view>
+
+    <mip-story-view>
+      <mip-story-layer template="center">
+        <p animate-in="scale-in">放大进入</p>
+        <p animate-in="whoosh-in-left">快速做、左飞入</p>
+        <p animate-in="whoosh-in-right">快速右飞入</p>
+      </mip-story-layer>
+    </mip-story-view>
+
+    <mip-story-view>
+      <mip-story-layer template="center">
+        <p animate-in="twirl-in">原地旋转</p>
+        <p animate-in="rotate-in-left">左旋入</p>
+        <p animate-in="rotate-in-right">右旋入</p>
+      </mip-story-layer>
+    </mip-story-view>
+
+  </mip-story>
+
+  <script src="https://c.mipcdn.com/static/v1/mip.js"></script>
+  <script src="https://c.mipcdn.com/static/v1/mip-share/mip-share.js"></script>
+  <script src="mip-story.js"></script>
+</body>
+
+</html>

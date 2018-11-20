@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html mip lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <title>奥斯卡小故事</title>
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <link rel="stylesheet" href="https://c.mipcdn.com/static/v1/mip.css">
+  <style mip-custom>
+    mip-story-layer p {
+      font-size: 30px!important;
+      line-height: 2!important;
+      color: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+  <mip-story standalone>
+    <script type="application/json">
+      {
+        "share": {
+          "thumbnail": "https://www.mipengine.org/static/img/mip-story/cover.jpg",
+          "background": "https://www.mipengine.org/static/img/mip-story/p8.png",
+          "title": "奥斯卡",
+          "desc": "奥斯卡颁奖典礼回顾",
+          "from": "小故事"
+        }
+      }
+    </script>
+
+    <mip-story-view>
+      <mip-story-layer template="cover">
+        <mip-story-video loop layout="responsive" width="320" poster="https://mipstatic.baidu.com/static/mip-static/mip-story/story-heritage/img/poster3.jpg">
+          <source src="../static//video/test1.ts" type="video/ts">
+          <source src="https://baidulogo.bj.bcebos.com/move%2F20180608%2Fsx.mp4" type="video/mp4">
+        </mip-story-video>
+      </mip-story-layer>
+      <mip-story-layer template="under-left">
+        <p>此时视频作为背景</p>
+        <p animate-in="fade-in-bottom">正常使用动画</p>
+      </mip-story-layer>
+    </mip-story-view>
+
+    <mip-story-view>
+      <mip-story-layer template="cover">
+        <mip-story-video loop layout="responsive" poster="https://mipstatic.baidu.com/static/mip-static/mip-story/story-heritage/img/poster4.jpg">
+          <source src="../static//video/test2.ts" type="video/ts">
+          <source src="https://baidulogo.bj.bcebos.com/move%2F20180608%2Fsj.mp4" type="video/mp4">
+        </mip-story-video>
+      </mip-story-layer>
+      <mip-story-layer template="under-left">
+        <p>此时视频作为背景</p>
+        <p animate-in="fade-in-bottom">正常使用动画</p>
+      </mip-story-layer>
+    </mip-story-view>
+
+
+  </mip-story>
+
+  <script src="https://c.mipcdn.com/static/v1/mip.js"></script>
+  <script src="https://c.mipcdn.com/static/v1/mip-share/mip-share.js"></script>
+  <!-- <script src="https://c.mipcdn.com/static/v1/mip-story/mip-story.js"></script> -->
+  <script src="mip-story.js"></script>
+</body>
+
+</html>

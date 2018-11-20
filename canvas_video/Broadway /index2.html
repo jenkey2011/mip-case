@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta charset="utf-8" />
+  <title>Broadwat Test</title>
+  <style>
+    canvas {
+      width: 100% !important;
+      max-width: 640px !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+  </div>
+ <script src="Decoder.js"></script>
+  <script src="YUVWebGLCanvas.js"></script>
+  <script src="Player.js"></script>
+  <script src="stream.js"></script>
+  <script src="mp4.js"></script>
+  <script>
+    var player = new MP4Player(new Stream('./story_video_dog.mp4'), false, '', 'auto');
+    player.play();
+    document.querySelector('.container').appendChild(player.canvas);
+  </script>
+
+</body>
+
+</html>
